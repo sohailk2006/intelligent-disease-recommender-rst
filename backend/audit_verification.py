@@ -500,7 +500,7 @@ def audit_ml_baselines() -> Dict[str, Any]:
         "train_test_overlap": 0,
         "hyperparameters": {
             "RandomForest": {"n_estimators": 100, "max_depth": 15, "random_state": 42},
-            "MultinomialNB": {"alpha": 1.0, "fit_prior": True},
+            "BernoulliNB": {"alpha": 1.0, "fit_prior": True},
             "LogisticRegression": {"max_iter": 1000, "penalty": "l2", "random_state": 42},
             "DecisionTree": {"criterion": "gini", "random_state": 42},
         },

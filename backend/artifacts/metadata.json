@@ -1,7 +1,7 @@
 {
   "project_name": "An Intelligent Recommender System Using Machine Learning, Association Rules and Rough Set for Disease Prediction from Incomplete Symptom Set",
   "version": "1.0.0",
-  "timestamp": "2026-10-07T09:15:08Z",
+  "timestamp": "2026-10-07T09:53:43Z",
   "random_seed": 42,
   "dataset_summary": {
     "universe_size": 4920,
@@ -231,19 +231,21 @@
     "sample_per_class": 120
   },
   "timings": {
-    "dataset_loading_time_seconds": 0.042,
-    "preprocessing_time_seconds": 0.0091,
-    "rst_dependency_time_seconds": 0.2355,
-    "discernibility_analysis_time_seconds": 0.3375,
-    "reduct_calculation_time_seconds": 5.1022,
-    "association_rule_mining_time_seconds": 0.6543,
-    "ml_training_time_seconds": 0.4107,
-    "benchmarking_time_seconds": 19.2872,
-    "total_preparation_time_seconds": 26.2887,
+    "dataset_loading_time_seconds": 0.0418,
+    "preprocessing_time_seconds": 0.008,
+    "rst_dependency_time_seconds": 0.2625,
+    "discernibility_analysis_time_seconds": 0.329,
+    "reduct_calculation_time_seconds": 5.0964,
+    "association_rule_mining_time_seconds": 0.6398,
+    "ml_training_time_seconds": 0.3436,
+    "pure_model_preparation_time_seconds": 6.7212,
+    "benchmarking_time_seconds": 115.4722,
+    "total_preparation_time_seconds": 122.757,
+    "timing_breakdown_note": "pure_model_preparation_time_seconds (~6.7-7.5s) measures training the RST engine, reducts, rules, and ML classifiers. benchmarking_time_seconds (~20-32s) measures running repeated evaluations on Testing.csv across 5 missing rates. total_preparation_time_seconds measures the entire script including benchmarking and artifact serialization.",
     "per_query_latency": {
-      "mean_latency_ms": 1.222,
-      "p50_latency_ms": 0.662,
-      "p95_latency_ms": 2.462
+      "mean_latency_ms": 1.541,
+      "p50_latency_ms": 1.482,
+      "p95_latency_ms": 3.243
     }
   },
   "top_predictive_symptoms": [

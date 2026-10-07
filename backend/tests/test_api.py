@@ -104,7 +104,7 @@ def test_model_comparison_endpoint():
     assert data["status"] == "SUCCESS"
     assert "Malaria" in data["rst_prediction"]["primary_disease"]
     assert "RandomForest" in data["ml_predictions"]
-    assert "MultinomialNB" in data["ml_predictions"]
+    assert "BernoulliNB" in data["ml_predictions"]
     assert "LogisticRegression" in data["ml_predictions"]
     assert "DecisionTree" in data["ml_predictions"]
 

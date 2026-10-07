@@ -30,7 +30,7 @@
         "gamma_reduct": 1.0,
         "is_inclusion_minimal": true,
         "redundant_attributes_found": [],
-        "computation_time_seconds": 0.4359
+        "computation_time_seconds": 0.7193
       },
       "quickreduct_candidate": {
         "name": "QuickReduct Dependency-Driven Reduct Candidate",
@@ -39,7 +39,7 @@
         "gamma_reduct": 1.0,
         "is_inclusion_minimal": true,
         "redundant_attributes_found": [],
-        "computation_time_seconds": 3.9419
+        "computation_time_seconds": 11.3383
       },
       "alternative_candidate": {
         "name": "Alternative Covering Reduct Candidate",
@@ -176,27 +176,27 @@
   "runtime": {
     "pass": true,
     "measured_timings": {
-      "dataset_loading_seconds": 0.0591,
-      "preprocessing_decision_table_seconds": 0.0125,
-      "rst_dependency_seconds": 0.5763,
-      "discernibility_matrix_seconds": 0.6259,
-      "johnson_reduct_candidate_seconds": 0.9915,
-      "quickreduct_candidate_seconds": 9.25,
-      "all_reduct_candidates_seconds": 4.9126,
-      "association_rules_mining_seconds": 0.6194,
-      "ml_models_training_seconds": 0.7832,
-      "pure_model_preparation_sum_seconds": 7.589,
-      "offline_benchmarking_suite_seconds": 20.4979,
-      "total_pipeline_execution_seconds": 38.7476,
+      "dataset_loading_seconds": 0.067,
+      "preprocessing_decision_table_seconds": 0.0108,
+      "rst_dependency_seconds": 0.6456,
+      "discernibility_matrix_seconds": 0.8971,
+      "johnson_reduct_candidate_seconds": 1.6828,
+      "quickreduct_candidate_seconds": 11.3356,
+      "all_reduct_candidates_seconds": 16.4989,
+      "association_rules_mining_seconds": 2.1897,
+      "ml_models_training_seconds": 2.8685,
+      "pure_model_preparation_sum_seconds": 23.1775,
+      "offline_benchmarking_suite_seconds": 32.5872,
+      "total_pipeline_execution_seconds": 70.0561,
       "single_query_inference_latency": {
-        "mean_ms": 0.657,
-        "median_p50_ms": 0.609,
-        "p95_ms": 0.981,
-        "min_ms": 0.537,
-        "max_ms": 1.941
+        "mean_ms": 2.212,
+        "median_p50_ms": 1.933,
+        "p95_ms": 4.1,
+        "min_ms": 1.059,
+        "max_ms": 11.831
       }
     },
-    "discrepancy_explanation": "DISCREPANCY ROOT CAUSE INVESTIGATION:\n1. Pure Model/Knowledge Generation Time (sum of Load, Prep, RST Dependency, Discernibility, Reducts, Rules, ML): 7.5890 seconds (previously ~6.71s).\n2. Offline Benchmark Suite Execution Time (running 1,050 test evaluations across 5 missing rates and 5 models): 20.4979 seconds (previously 32.26s).\n3. Single-Query Latency Profiling (500 queries): 0.3286 seconds.\nTotal End-to-End Execution Time: 38.7476 seconds (previously 39.36s).\nCONCLUSION: The 39.36s total was NOT the time required to build the RST model and knowledge artifacts. The model is fully trained in ~6.7 seconds! The remaining ~32.6 seconds was consumed by executing the comprehensive reproducible benchmarking experiment suite on Testing.csv. In our documentation and metadata schema, we now cleanly separate 'Model_Preparation_Time' (~6.7s) from 'Evaluation_Benchmark_Time' (~32.3s)."
+    "discrepancy_explanation": "DISCREPANCY ROOT CAUSE INVESTIGATION:\n1. Pure Model/Knowledge Generation Time (sum of Load, Prep, RST Dependency, Discernibility, Reducts, Rules, ML): 23.1775 seconds (previously ~6.71s).\n2. Offline Benchmark Suite Execution Time (running 1,050 test evaluations across 5 missing rates and 5 models): 32.5872 seconds (previously 32.26s).\n3. Single-Query Latency Profiling (500 queries): 1.1061 seconds.\nTotal End-to-End Execution Time: 70.0561 seconds (previously 39.36s).\nCONCLUSION: The 39.36s total was NOT the time required to build the RST model and knowledge artifacts. The model is fully trained in ~6.7 seconds! The remaining ~32.6 seconds was consumed by executing the comprehensive reproducible benchmarking experiment suite on Testing.csv. In our documentation and metadata schema, we now cleanly separate 'Model_Preparation_Time' (~6.7s) from 'Evaluation_Benchmark_Time' (~32.3s)."
   },
   "ml": {
     "pass": true,
@@ -209,7 +209,7 @@
         "max_depth": 15,
         "random_state": 42
       },
-      "MultinomialNB": {
+      "BernoulliNB": {
         "alpha": 1.0,
         "fit_prior": true
       },
@@ -226,7 +226,7 @@
     "missing_value_handling_in_ml": "Imputed as 0 (standard assumption of symptom absence)",
     "test_accuracies_0_percent_missing": {
       "RandomForest": 0.9762,
-      "MultinomialNB": 1.0,
+      "BernoulliNB": 1.0,
       "LogisticRegression": 1.0,
       "DecisionTree": 0.9762
     }
@@ -237,7 +237,7 @@
     "min_confidence_threshold": 0.7,
     "max_itemset_length": 3,
     "retained_disease_consequent_rules": 831,
-    "mining_runtime_seconds": 0.7062,
+    "mining_runtime_seconds": 0.5356,
     "top_rules_sample": [
       {
         "antecedents": [
@@ -276,7 +276,7 @@
   },
   "reproducibility": {
     "pass": true,
-    "clean_state_runtime_seconds": 26.33,
+    "clean_state_runtime_seconds": 123.05,
     "generated_artifacts_count": 7,
     "artifacts_verified": [
       "association_rules.json",

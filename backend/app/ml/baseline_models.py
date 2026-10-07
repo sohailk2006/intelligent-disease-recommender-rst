@@ -13,7 +13,7 @@ from typing import Dict, List, Optional, Any
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.naive_bayes import BernoulliNB
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 
@@ -35,6 +35,7 @@ class MLBaselines:
         y_train = self.table.y
 
         # Initialize classifiers with fixed deterministic random seed
+        # BernoulliNB is preferred for binary {0, 1} symptom presence/absence attributes
         self.models = {
             "RandomForest": RandomForestClassifier(
                 n_estimators=100,
@@ -42,7 +43,7 @@ class MLBaselines:
                 max_depth=15,
                 n_jobs=-1,
             ),
-            "MultinomialNB": MultinomialNB(),
+            "BernoulliNB": BernoulliNB(alpha=1.0),
             "LogisticRegression": LogisticRegression(
                 max_iter=1000,
                 random_state=settings.RANDOM_SEED,

@@ -78,7 +78,7 @@ class IncompleteBenchmarkRunner:
             rst_latency_list = []
 
             ml_acc_dict: Dict[str, List[float]] = {
-                model_name: [] for model_name in ["RandomForest", "MultinomialNB", "LogisticRegression", "DecisionTree"]
+                model_name: [] for model_name in ["RandomForest", "BernoulliNB", "LogisticRegression", "DecisionTree"]
             }
 
             for rep in range(repetitions):

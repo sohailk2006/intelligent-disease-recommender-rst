@@ -2,7 +2,7 @@
   "reducts": [
     {
       "id": "reduct_johnson",
-      "name": "Johnson Greedy Discernibility Reduct",
+      "name": "Johnson Greedy Discernibility Reduct Candidate",
       "size": 38,
       "attributes": [
         "abdominal_pain",
@@ -45,11 +45,12 @@
         "yellowish_skin"
       ],
       "dependency_degree": 1.0,
-      "is_minimal": true
+      "is_inclusion_minimal": true,
+      "global_minimality_claimed": false
     },
     {
       "id": "reduct_quickreduct",
-      "name": "QuickReduct Dependency-Driven Reduct",
+      "name": "QuickReduct Dependency-Driven Reduct Candidate",
       "size": 45,
       "attributes": [
         "abnormal_menstruation",
@@ -99,11 +100,12 @@
         "weight_loss"
       ],
       "dependency_degree": 1.0,
-      "is_minimal": true
+      "is_inclusion_minimal": true,
+      "global_minimality_claimed": false
     },
     {
       "id": "reduct_frequency",
-      "name": "Alternative Minimal Covering Reduct",
+      "name": "Alternative Covering Reduct Candidate",
       "size": 46,
       "attributes": [
         "abdominal_pain",
@@ -154,7 +156,8 @@
         "yellowish_skin"
       ],
       "dependency_degree": 1.0,
-      "is_minimal": true
+      "is_inclusion_minimal": true,
+      "global_minimality_claimed": false
     }
   ],
   "core_attributes": [],
