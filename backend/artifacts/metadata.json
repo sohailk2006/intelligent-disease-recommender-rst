@@ -1,7 +1,7 @@
 {
   "project_name": "An Intelligent Recommender System Using Machine Learning, Association Rules and Rough Set for Disease Prediction from Incomplete Symptom Set",
   "version": "1.0.0",
-  "timestamp": "2026-10-07T09:00:49Z",
+  "timestamp": "2026-10-07T09:15:08Z",
   "random_seed": 42,
   "dataset_summary": {
     "universe_size": 4920,
@@ -231,19 +231,19 @@
     "sample_per_class": 120
   },
   "timings": {
-    "dataset_loading_time_seconds": 0.0495,
-    "preprocessing_time_seconds": 0.0151,
-    "rst_dependency_time_seconds": 0.1959,
-    "discernibility_analysis_time_seconds": 0.2933,
-    "reduct_calculation_time_seconds": 4.605,
-    "association_rule_mining_time_seconds": 0.7255,
-    "ml_training_time_seconds": 0.8226,
-    "benchmarking_time_seconds": 32.2648,
-    "total_preparation_time_seconds": 39.3627,
+    "dataset_loading_time_seconds": 0.042,
+    "preprocessing_time_seconds": 0.0091,
+    "rst_dependency_time_seconds": 0.2355,
+    "discernibility_analysis_time_seconds": 0.3375,
+    "reduct_calculation_time_seconds": 5.1022,
+    "association_rule_mining_time_seconds": 0.6543,
+    "ml_training_time_seconds": 0.4107,
+    "benchmarking_time_seconds": 19.2872,
+    "total_preparation_time_seconds": 26.2887,
     "per_query_latency": {
-      "mean_latency_ms": 1.543,
-      "p50_latency_ms": 1.738,
-      "p95_latency_ms": 2.611
+      "mean_latency_ms": 1.222,
+      "p50_latency_ms": 0.662,
+      "p95_latency_ms": 2.462
     }
   },
   "top_predictive_symptoms": [

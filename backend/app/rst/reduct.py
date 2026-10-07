@@ -136,11 +136,12 @@ class ReductGenerator:
         g_johnson = self.dependency.compute_gamma(attribute_names=johnson_r)
         reducts.append({
             "id": "reduct_johnson",
-            "name": "Johnson Greedy Discernibility Reduct",
+            "name": "Johnson Greedy Discernibility Reduct Candidate",
             "size": len(johnson_r),
             "attributes": sorted(johnson_r),
             "dependency_degree": g_johnson,
-            "is_minimal": True,
+            "is_inclusion_minimal": True,
+            "global_minimality_claimed": False,
         })
 
         # Reduct 2: QuickReduct algorithm (dependency-driven)
@@ -148,11 +149,12 @@ class ReductGenerator:
         g_quick = self.dependency.compute_gamma(attribute_names=quick_r)
         reducts.append({
             "id": "reduct_quickreduct",
-            "name": "QuickReduct Dependency-Driven Reduct",
+            "name": "QuickReduct Dependency-Driven Reduct Candidate",
             "size": len(quick_r),
             "attributes": sorted(quick_r),
             "dependency_degree": g_quick,
-            "is_minimal": True,
+            "is_inclusion_minimal": True,
+            "global_minimality_claimed": False,
         })
 
         # Reduct 3: Weighted frequency reduct
@@ -180,11 +182,12 @@ class ReductGenerator:
         g_alt = self.dependency.compute_gamma(attribute_names=alt_attrs)
         reducts.append({
             "id": "reduct_frequency",
-            "name": "Alternative Minimal Covering Reduct",
+            "name": "Alternative Covering Reduct Candidate",
             "size": len(alt_attrs),
             "attributes": sorted(alt_attrs),
             "dependency_degree": g_alt,
-            "is_minimal": True,
+            "is_inclusion_minimal": True,
+            "global_minimality_claimed": False,
         })
 
         return reducts
