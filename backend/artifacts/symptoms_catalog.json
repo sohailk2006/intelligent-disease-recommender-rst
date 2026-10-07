@@ -1,0 +1,926 @@
+[
+  {
+    "id": "abdominal_pain",
+    "label": "Abdominal Pain",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.2098,
+    "prevalence_percentage": 20.98
+  },
+  {
+    "id": "abnormal_menstruation",
+    "label": "Abnormal Menstruation",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0488,
+    "prevalence_percentage": 4.88
+  },
+  {
+    "id": "acidity",
+    "label": "Acidity",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.0451,
+    "prevalence_percentage": 4.51
+  },
+  {
+    "id": "acute_liver_failure",
+    "label": "Acute Liver Failure",
+    "category": "urinary_hepatic",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "altered_sensorium",
+    "label": "Altered Sensorium",
+    "category": "neurological_sensory",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "anxiety",
+    "label": "Anxiety",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "back_pain",
+    "label": "Back Pain",
+    "category": "musculoskeletal",
+    "frequency_in_train": 0.0463,
+    "prevalence_percentage": 4.63
+  },
+  {
+    "id": "belly_pain",
+    "label": "Belly Pain",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "blackheads",
+    "label": "Blackheads",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "bladder_discomfort",
+    "label": "Bladder Discomfort",
+    "category": "urinary_hepatic",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "blister",
+    "label": "Blister",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "blood_in_sputum",
+    "label": "Blood In Sputum",
+    "category": "respiratory",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "bloody_stool",
+    "label": "Bloody Stool",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "blurred_and_distorted_vision",
+    "label": "Blurred And Distorted Vision",
+    "category": "neurological_sensory",
+    "frequency_in_train": 0.0695,
+    "prevalence_percentage": 6.95
+  },
+  {
+    "id": "breathlessness",
+    "label": "Breathlessness",
+    "category": "respiratory",
+    "frequency_in_train": 0.0915,
+    "prevalence_percentage": 9.15
+  },
+  {
+    "id": "brittle_nails",
+    "label": "Brittle Nails",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "bruising",
+    "label": "Bruising",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "burning_micturition",
+    "label": "Burning Micturition",
+    "category": "urinary_hepatic",
+    "frequency_in_train": 0.0439,
+    "prevalence_percentage": 4.39
+  },
+  {
+    "id": "chest_pain",
+    "label": "Chest Pain",
+    "category": "respiratory",
+    "frequency_in_train": 0.1415,
+    "prevalence_percentage": 14.15
+  },
+  {
+    "id": "chills",
+    "label": "Chills",
+    "category": "constitutional",
+    "frequency_in_train": 0.1622,
+    "prevalence_percentage": 16.22
+  },
+  {
+    "id": "cold_hands_and_feets",
+    "label": "Cold Hands And Feets",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "coma",
+    "label": "Coma",
+    "category": "neurological_sensory",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "congestion",
+    "label": "Congestion",
+    "category": "respiratory",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "constipation",
+    "label": "Constipation",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.0463,
+    "prevalence_percentage": 4.63
+  },
+  {
+    "id": "continuous_feel_of_urine",
+    "label": "Continuous Feel Of Urine",
+    "category": "urinary_hepatic",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "continuous_sneezing",
+    "label": "Continuous Sneezing",
+    "category": "respiratory",
+    "frequency_in_train": 0.0451,
+    "prevalence_percentage": 4.51
+  },
+  {
+    "id": "cough",
+    "label": "Cough",
+    "category": "respiratory",
+    "frequency_in_train": 0.1146,
+    "prevalence_percentage": 11.46
+  },
+  {
+    "id": "cramps",
+    "label": "Cramps",
+    "category": "musculoskeletal",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "dark_urine",
+    "label": "Dark Urine",
+    "category": "urinary_hepatic",
+    "frequency_in_train": 0.1159,
+    "prevalence_percentage": 11.59
+  },
+  {
+    "id": "dehydration",
+    "label": "Dehydration",
+    "category": "general_clinical",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "depression",
+    "label": "Depression",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0476,
+    "prevalence_percentage": 4.76
+  },
+  {
+    "id": "diarrhoea",
+    "label": "Diarrhoea",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.1146,
+    "prevalence_percentage": 11.46
+  },
+  {
+    "id": "dischromic _patches",
+    "label": "Dischromic  Patches",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "distention_of_abdomen",
+    "label": "Distention Of Abdomen",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "dizziness",
+    "label": "Dizziness",
+    "category": "neurological_sensory",
+    "frequency_in_train": 0.0683,
+    "prevalence_percentage": 6.83
+  },
+  {
+    "id": "drying_and_tingling_lips",
+    "label": "Drying And Tingling Lips",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "enlarged_thyroid",
+    "label": "Enlarged Thyroid",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "excessive_hunger",
+    "label": "Excessive Hunger",
+    "category": "constitutional",
+    "frequency_in_train": 0.0939,
+    "prevalence_percentage": 9.39
+  },
+  {
+    "id": "extra_marital_contacts",
+    "label": "Extra Marital Contacts",
+    "category": "urinary_hepatic",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "family_history",
+    "label": "Family History",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0463,
+    "prevalence_percentage": 4.63
+  },
+  {
+    "id": "fast_heart_rate",
+    "label": "Fast Heart Rate",
+    "category": "respiratory",
+    "frequency_in_train": 0.0476,
+    "prevalence_percentage": 4.76
+  },
+  {
+    "id": "fatigue",
+    "label": "Fatigue",
+    "category": "constitutional",
+    "frequency_in_train": 0.3927,
+    "prevalence_percentage": 39.27
+  },
+  {
+    "id": "fluid_overload",
+    "label": "Fluid Overload",
+    "category": "urinary_hepatic",
+    "frequency_in_train": 0.0,
+    "prevalence_percentage": 0.0
+  },
+  {
+    "id": "fluid_overload.1",
+    "label": "Fluid Overload.1",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "foul_smell_of urine",
+    "label": "Foul Smell Of Urine",
+    "category": "urinary_hepatic",
+    "frequency_in_train": 0.0207,
+    "prevalence_percentage": 2.07
+  },
+  {
+    "id": "headache",
+    "label": "Headache",
+    "category": "neurological_sensory",
+    "frequency_in_train": 0.2305,
+    "prevalence_percentage": 23.05
+  },
+  {
+    "id": "high_fever",
+    "label": "High Fever",
+    "category": "constitutional",
+    "frequency_in_train": 0.2768,
+    "prevalence_percentage": 27.68
+  },
+  {
+    "id": "hip_joint_pain",
+    "label": "Hip Joint Pain",
+    "category": "musculoskeletal",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "history_of_alcohol_consumption",
+    "label": "History Of Alcohol Consumption",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "increased_appetite",
+    "label": "Increased Appetite",
+    "category": "constitutional",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "indigestion",
+    "label": "Indigestion",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.0451,
+    "prevalence_percentage": 4.51
+  },
+  {
+    "id": "inflammatory_nails",
+    "label": "Inflammatory Nails",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "internal_itching",
+    "label": "Internal Itching",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "irregular_sugar_level",
+    "label": "Irregular Sugar Level",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "irritability",
+    "label": "Irritability",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0963,
+    "prevalence_percentage": 9.63
+  },
+  {
+    "id": "irritation_in_anus",
+    "label": "Irritation In Anus",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "itching",
+    "label": "Itching",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.1378,
+    "prevalence_percentage": 13.78
+  },
+  {
+    "id": "joint_pain",
+    "label": "Joint Pain",
+    "category": "musculoskeletal",
+    "frequency_in_train": 0.139,
+    "prevalence_percentage": 13.9
+  },
+  {
+    "id": "knee_pain",
+    "label": "Knee Pain",
+    "category": "musculoskeletal",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "lack_of_concentration",
+    "label": "Lack Of Concentration",
+    "category": "neurological_sensory",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "lethargy",
+    "label": "Lethargy",
+    "category": "constitutional",
+    "frequency_in_train": 0.0927,
+    "prevalence_percentage": 9.27
+  },
+  {
+    "id": "loss_of_appetite",
+    "label": "Loss Of Appetite",
+    "category": "constitutional",
+    "frequency_in_train": 0.2341,
+    "prevalence_percentage": 23.41
+  },
+  {
+    "id": "loss_of_balance",
+    "label": "Loss Of Balance",
+    "category": "neurological_sensory",
+    "frequency_in_train": 0.0695,
+    "prevalence_percentage": 6.95
+  },
+  {
+    "id": "loss_of_smell",
+    "label": "Loss Of Smell",
+    "category": "neurological_sensory",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "malaise",
+    "label": "Malaise",
+    "category": "constitutional",
+    "frequency_in_train": 0.1427,
+    "prevalence_percentage": 14.27
+  },
+  {
+    "id": "mild_fever",
+    "label": "Mild Fever",
+    "category": "constitutional",
+    "frequency_in_train": 0.072,
+    "prevalence_percentage": 7.2
+  },
+  {
+    "id": "mood_swings",
+    "label": "Mood Swings",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0463,
+    "prevalence_percentage": 4.63
+  },
+  {
+    "id": "movement_stiffness",
+    "label": "Movement Stiffness",
+    "category": "musculoskeletal",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "mucoid_sputum",
+    "label": "Mucoid Sputum",
+    "category": "respiratory",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "muscle_pain",
+    "label": "Muscle Pain",
+    "category": "musculoskeletal",
+    "frequency_in_train": 0.0963,
+    "prevalence_percentage": 9.63
+  },
+  {
+    "id": "muscle_wasting",
+    "label": "Muscle Wasting",
+    "category": "musculoskeletal",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "muscle_weakness",
+    "label": "Muscle Weakness",
+    "category": "musculoskeletal",
+    "frequency_in_train": 0.0476,
+    "prevalence_percentage": 4.76
+  },
+  {
+    "id": "nausea",
+    "label": "Nausea",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.2329,
+    "prevalence_percentage": 23.29
+  },
+  {
+    "id": "neck_pain",
+    "label": "Neck Pain",
+    "category": "musculoskeletal",
+    "frequency_in_train": 0.0463,
+    "prevalence_percentage": 4.63
+  },
+  {
+    "id": "nodal_skin_eruptions",
+    "label": "Nodal Skin Eruptions",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "obesity",
+    "label": "Obesity",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0463,
+    "prevalence_percentage": 4.63
+  },
+  {
+    "id": "pain_behind_the_eyes",
+    "label": "Pain Behind The Eyes",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "pain_during_bowel_movements",
+    "label": "Pain During Bowel Movements",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "pain_in_anal_region",
+    "label": "Pain In Anal Region",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "painful_walking",
+    "label": "Painful Walking",
+    "category": "musculoskeletal",
+    "frequency_in_train": 0.0463,
+    "prevalence_percentage": 4.63
+  },
+  {
+    "id": "palpitations",
+    "label": "Palpitations",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "passage_of_gases",
+    "label": "Passage Of Gases",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "patches_in_throat",
+    "label": "Patches In Throat",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "phlegm",
+    "label": "Phlegm",
+    "category": "respiratory",
+    "frequency_in_train": 0.072,
+    "prevalence_percentage": 7.2
+  },
+  {
+    "id": "polyuria",
+    "label": "Polyuria",
+    "category": "urinary_hepatic",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "prominent_veins_on_calf",
+    "label": "Prominent Veins On Calf",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "puffy_face_and_eyes",
+    "label": "Puffy Face And Eyes",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "pus_filled_pimples",
+    "label": "Pus Filled Pimples",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "receiving_blood_transfusion",
+    "label": "Receiving Blood Transfusion",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "receiving_unsterile_injections",
+    "label": "Receiving Unsterile Injections",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "red_sore_around_nose",
+    "label": "Red Sore Around Nose",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "red_spots_over_body",
+    "label": "Red Spots Over Body",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.0476,
+    "prevalence_percentage": 4.76
+  },
+  {
+    "id": "redness_of_eyes",
+    "label": "Redness Of Eyes",
+    "category": "respiratory",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "restlessness",
+    "label": "Restlessness",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0463,
+    "prevalence_percentage": 4.63
+  },
+  {
+    "id": "runny_nose",
+    "label": "Runny Nose",
+    "category": "respiratory",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "rusty_sputum",
+    "label": "Rusty Sputum",
+    "category": "respiratory",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "scurring",
+    "label": "Scurring",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "shivering",
+    "label": "Shivering",
+    "category": "constitutional",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "silver_like_dusting",
+    "label": "Silver Like Dusting",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "sinus_pressure",
+    "label": "Sinus Pressure",
+    "category": "respiratory",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "skin_peeling",
+    "label": "Skin Peeling",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "skin_rash",
+    "label": "Skin Rash",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.1598,
+    "prevalence_percentage": 15.98
+  },
+  {
+    "id": "slurred_speech",
+    "label": "Slurred Speech",
+    "category": "neurological_sensory",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "small_dents_in_nails",
+    "label": "Small Dents In Nails",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "spinning_movements",
+    "label": "Spinning Movements",
+    "category": "neurological_sensory",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "spotting_ urination",
+    "label": "Spotting  Urination",
+    "category": "urinary_hepatic",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "stiff_neck",
+    "label": "Stiff Neck",
+    "category": "musculoskeletal",
+    "frequency_in_train": 0.0463,
+    "prevalence_percentage": 4.63
+  },
+  {
+    "id": "stomach_bleeding",
+    "label": "Stomach Bleeding",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "stomach_pain",
+    "label": "Stomach Pain",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.0451,
+    "prevalence_percentage": 4.51
+  },
+  {
+    "id": "sunken_eyes",
+    "label": "Sunken Eyes",
+    "category": "general_clinical",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "sweating",
+    "label": "Sweating",
+    "category": "constitutional",
+    "frequency_in_train": 0.1378,
+    "prevalence_percentage": 13.78
+  },
+  {
+    "id": "swelled_lymph_nodes",
+    "label": "Swelled Lymph Nodes",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0707,
+    "prevalence_percentage": 7.07
+  },
+  {
+    "id": "swelling_joints",
+    "label": "Swelling Joints",
+    "category": "musculoskeletal",
+    "frequency_in_train": 0.0463,
+    "prevalence_percentage": 4.63
+  },
+  {
+    "id": "swelling_of_stomach",
+    "label": "Swelling Of Stomach",
+    "category": "urinary_hepatic",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "swollen_blood_vessels",
+    "label": "Swollen Blood Vessels",
+    "category": "general_clinical",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "swollen_extremeties",
+    "label": "Swollen Extremeties",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "swollen_legs",
+    "label": "Swollen Legs",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "throat_irritation",
+    "label": "Throat Irritation",
+    "category": "respiratory",
+    "frequency_in_train": 0.0244,
+    "prevalence_percentage": 2.44
+  },
+  {
+    "id": "toxic_look_(typhos)",
+    "label": "Toxic Look (Typhos)",
+    "category": "general_clinical",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "ulcers_on_tongue",
+    "label": "Ulcers On Tongue",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "unsteadiness",
+    "label": "Unsteadiness",
+    "category": "neurological_sensory",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "visual_disturbances",
+    "label": "Visual Disturbances",
+    "category": "neurological_sensory",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "vomiting",
+    "label": "Vomiting",
+    "category": "gastrointestinal",
+    "frequency_in_train": 0.389,
+    "prevalence_percentage": 38.9
+  },
+  {
+    "id": "watering_from_eyes",
+    "label": "Watering From Eyes",
+    "category": "general_clinical",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "weakness_in_limbs",
+    "label": "Weakness In Limbs",
+    "category": "musculoskeletal",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "weakness_of_one_body_side",
+    "label": "Weakness Of One Body Side",
+    "category": "general_clinical",
+    "frequency_in_train": 0.022,
+    "prevalence_percentage": 2.2
+  },
+  {
+    "id": "weight_gain",
+    "label": "Weight Gain",
+    "category": "constitutional",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "weight_loss",
+    "label": "Weight Loss",
+    "category": "constitutional",
+    "frequency_in_train": 0.0927,
+    "prevalence_percentage": 9.27
+  },
+  {
+    "id": "yellow_crust_ooze",
+    "label": "Yellow Crust Ooze",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "yellow_urine",
+    "label": "Yellow Urine",
+    "category": "urinary_hepatic",
+    "frequency_in_train": 0.0232,
+    "prevalence_percentage": 2.32
+  },
+  {
+    "id": "yellowing_of_eyes",
+    "label": "Yellowing Of Eyes",
+    "category": "urinary_hepatic",
+    "frequency_in_train": 0.1659,
+    "prevalence_percentage": 16.59
+  },
+  {
+    "id": "yellowish_skin",
+    "label": "Yellowish Skin",
+    "category": "skin_mucosa",
+    "frequency_in_train": 0.1854,
+    "prevalence_percentage": 18.54
+  }
+]

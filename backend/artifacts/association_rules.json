@@ -1,0 +1,9894 @@
+[
+  {
+    "antecedents": [
+      "nodal_skin_eruptions"
+    ],
+    "consequent": "Fungal infection",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "shivering"
+    ],
+    "consequent": "Allergy",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "ulcers_on_tongue"
+    ],
+    "consequent": "GERD",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "muscle_wasting"
+    ],
+    "consequent": "AIDS",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "spotting_ urination"
+    ],
+    "consequent": "Drug Reaction",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_gain"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "anxiety"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cold_hands_and_feets"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "patches_in_throat"
+    ],
+    "consequent": "AIDS",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irregular_sugar_level"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sunken_eyes"
+    ],
+    "consequent": "Gastroenteritis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dehydration"
+    ],
+    "consequent": "Gastroenteritis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "pain_behind_the_eyes"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellow_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acute_liver_failure"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swelling_of_stomach"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "throat_irritation"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "redness_of_eyes"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sinus_pressure"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "congestion"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weakness_in_limbs"
+    ],
+    "consequent": "Cervical spondylosis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "pain_during_bowel_movements"
+    ],
+    "consequent": "Dimorphic hemmorhoids(piles)",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "pain_in_anal_region"
+    ],
+    "consequent": "Dimorphic hemmorhoids(piles)",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "bloody_stool"
+    ],
+    "consequent": "Dimorphic hemmorhoids(piles)",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritation_in_anus"
+    ],
+    "consequent": "Dimorphic hemmorhoids(piles)",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cramps"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "bruising"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swollen_legs"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swollen_blood_vessels"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "puffy_face_and_eyes"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "enlarged_thyroid"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "brittle_nails"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swollen_extremeties"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "extra_marital_contacts"
+    ],
+    "consequent": "AIDS",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "drying_and_tingling_lips"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "slurred_speech"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "knee_pain"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "hip_joint_pain"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "movement_stiffness"
+    ],
+    "consequent": "Arthritis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "spinning_movements"
+    ],
+    "consequent": "(vertigo) Paroymsal  Positional Vertigo",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "unsteadiness"
+    ],
+    "consequent": "(vertigo) Paroymsal  Positional Vertigo",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weakness_of_one_body_side"
+    ],
+    "consequent": "Paralysis (brain hemorrhage)",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_smell"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "bladder_discomfort"
+    ],
+    "consequent": "Urinary tract infection",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "foul_smell_of urine"
+    ],
+    "consequent": "Urinary tract infection",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "continuous_feel_of_urine"
+    ],
+    "consequent": "Urinary tract infection",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "passage_of_gases"
+    ],
+    "consequent": "Peptic ulcer diseae",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "internal_itching"
+    ],
+    "consequent": "Peptic ulcer diseae",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "toxic_look_(typhos)"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "altered_sensorium"
+    ],
+    "consequent": "Paralysis (brain hemorrhage)",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "belly_pain"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dischromic _patches"
+    ],
+    "consequent": "Fungal infection",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "watering_from_eyes"
+    ],
+    "consequent": "Allergy",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "increased_appetite"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "polyuria"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mucoid_sputum"
+    ],
+    "consequent": "Bronchial Asthma",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "rusty_sputum"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "lack_of_concentration"
+    ],
+    "consequent": "Hypertension ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "visual_disturbances"
+    ],
+    "consequent": "Migraine",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_blood_transfusion"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_unsterile_injections"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "coma"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "stomach_bleeding"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "distention_of_abdomen"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "history_of_alcohol_consumption"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "fluid_overload.1"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blood_in_sputum"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "prominent_veins_on_calf"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "palpitations"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "pus_filled_pimples"
+    ],
+    "consequent": "Acne",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blackheads"
+    ],
+    "consequent": "Acne",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "scurring"
+    ],
+    "consequent": "Acne",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_peeling"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "silver_like_dusting"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "small_dents_in_nails"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "inflammatory_nails"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blister"
+    ],
+    "consequent": "Impetigo",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "red_sore_around_nose"
+    ],
+    "consequent": "Impetigo",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellow_crust_ooze"
+    ],
+    "consequent": "Impetigo",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nodal_skin_eruptions",
+      "itching"
+    ],
+    "consequent": "Fungal infection",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "stomach_pain",
+      "itching"
+    ],
+    "consequent": "Drug Reaction",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "burning_micturition",
+      "itching"
+    ],
+    "consequent": "Drug Reaction",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "spotting_ urination",
+      "itching"
+    ],
+    "consequent": "Drug Reaction",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "itching"
+    ],
+    "consequent": "Jaundice",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "headache",
+      "itching"
+    ],
+    "consequent": "Chicken pox",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "itching"
+    ],
+    "consequent": "Chronic cholestasis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mild_fever",
+      "itching"
+    ],
+    "consequent": "Chicken pox",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "itching",
+      "yellow_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "itching",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Chicken pox",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "red_spots_over_body",
+      "itching"
+    ],
+    "consequent": "Chicken pox",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dischromic _patches",
+      "itching"
+    ],
+    "consequent": "Fungal infection",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_blood_transfusion",
+      "itching"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_unsterile_injections",
+      "itching"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "nodal_skin_eruptions"
+    ],
+    "consequent": "Fungal infection",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "chills"
+    ],
+    "consequent": "Dengue",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "stomach_pain"
+    ],
+    "consequent": "Drug Reaction",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "vomiting"
+    ],
+    "consequent": "Dengue",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "burning_micturition"
+    ],
+    "consequent": "Drug Reaction",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "spotting_ urination"
+    ],
+    "consequent": "Drug Reaction",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "lethargy"
+    ],
+    "consequent": "Chicken pox",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "nausea"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "pain_behind_the_eyes"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "back_pain"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "mild_fever"
+    ],
+    "consequent": "Chicken pox",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Chicken pox",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "muscle_pain"
+    ],
+    "consequent": "Dengue",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "dischromic _patches"
+    ],
+    "consequent": "Fungal infection",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "pus_filled_pimples"
+    ],
+    "consequent": "Acne",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "blackheads"
+    ],
+    "consequent": "Acne",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "scurring"
+    ],
+    "consequent": "Acne",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "skin_peeling"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "silver_like_dusting"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "small_dents_in_nails"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "inflammatory_nails"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "blister"
+    ],
+    "consequent": "Impetigo",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "red_sore_around_nose"
+    ],
+    "consequent": "Impetigo",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_rash",
+      "yellow_crust_ooze"
+    ],
+    "consequent": "Impetigo",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dischromic _patches",
+      "nodal_skin_eruptions"
+    ],
+    "consequent": "Fungal infection",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "continuous_sneezing",
+      "shivering"
+    ],
+    "consequent": "Allergy",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "continuous_sneezing",
+      "fatigue"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "continuous_sneezing"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "continuous_sneezing"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "continuous_sneezing",
+      "headache"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "continuous_sneezing",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "continuous_sneezing",
+      "malaise"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "continuous_sneezing",
+      "phlegm"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "continuous_sneezing",
+      "throat_irritation"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "redness_of_eyes",
+      "continuous_sneezing"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sinus_pressure",
+      "continuous_sneezing"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "continuous_sneezing",
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "congestion",
+      "continuous_sneezing"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "continuous_sneezing"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_smell",
+      "continuous_sneezing"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "continuous_sneezing",
+      "muscle_pain"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "watering_from_eyes",
+      "continuous_sneezing"
+    ],
+    "consequent": "Allergy",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "shivering",
+      "chills"
+    ],
+    "consequent": "Allergy",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "watering_from_eyes",
+      "shivering"
+    ],
+    "consequent": "Allergy",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "joint_pain",
+      "chills"
+    ],
+    "consequent": "Dengue",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "chills"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "pain_behind_the_eyes",
+      "chills"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "back_pain",
+      "chills"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "constipation",
+      "chills"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abdominal_pain",
+      "chills"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chills",
+      "mild_fever"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowing_of_eyes",
+      "chills"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chills",
+      "throat_irritation"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "redness_of_eyes",
+      "chills"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sinus_pressure",
+      "chills"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chills",
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "congestion",
+      "chills"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chills",
+      "fast_heart_rate"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_smell",
+      "chills"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "toxic_look_(typhos)",
+      "chills"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chills",
+      "red_spots_over_body"
+    ],
+    "consequent": "Dengue",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "belly_pain",
+      "chills"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "watering_from_eyes",
+      "chills"
+    ],
+    "consequent": "Allergy",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "rusty_sputum",
+      "chills"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blood_in_sputum",
+      "chills"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "joint_pain",
+      "headache"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "joint_pain",
+      "pain_behind_the_eyes"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "back_pain",
+      "joint_pain"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "joint_pain",
+      "diarrhoea"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "joint_pain",
+      "mild_fever"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acute_liver_failure",
+      "joint_pain"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "joint_pain",
+      "malaise"
+    ],
+    "consequent": "Dengue",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "neck_pain",
+      "joint_pain"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "knee_pain",
+      "joint_pain"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "hip_joint_pain",
+      "joint_pain"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "joint_pain",
+      "swelling_joints"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "joint_pain",
+      "red_spots_over_body"
+    ],
+    "consequent": "Dengue",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "coma",
+      "joint_pain"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "joint_pain",
+      "stomach_bleeding"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "joint_pain",
+      "painful_walking"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "joint_pain",
+      "skin_peeling"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "silver_like_dusting",
+      "joint_pain"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "joint_pain",
+      "small_dents_in_nails"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "joint_pain",
+      "inflammatory_nails"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "stomach_pain",
+      "acidity"
+    ],
+    "consequent": "GERD",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "ulcers_on_tongue",
+      "stomach_pain"
+    ],
+    "consequent": "GERD",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "stomach_pain"
+    ],
+    "consequent": "GERD",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "stomach_pain",
+      "burning_micturition"
+    ],
+    "consequent": "Drug Reaction",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "stomach_pain",
+      "spotting_ urination"
+    ],
+    "consequent": "Drug Reaction",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "stomach_pain"
+    ],
+    "consequent": "GERD",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "stomach_pain"
+    ],
+    "consequent": "GERD",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "ulcers_on_tongue",
+      "acidity"
+    ],
+    "consequent": "GERD",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "acidity"
+    ],
+    "consequent": "GERD",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "acidity"
+    ],
+    "consequent": "GERD",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "indigestion",
+      "acidity"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acidity",
+      "headache"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "acidity"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "acidity"
+    ],
+    "consequent": "GERD",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "excessive_hunger",
+      "acidity"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acidity",
+      "stiff_neck"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acidity",
+      "depression"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "acidity"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acidity",
+      "visual_disturbances"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "ulcers_on_tongue",
+      "vomiting"
+    ],
+    "consequent": "GERD",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "ulcers_on_tongue"
+    ],
+    "consequent": "GERD",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "ulcers_on_tongue"
+    ],
+    "consequent": "GERD",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "patches_in_throat",
+      "muscle_wasting"
+    ],
+    "consequent": "AIDS",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "muscle_wasting"
+    ],
+    "consequent": "AIDS",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "extra_marital_contacts",
+      "muscle_wasting"
+    ],
+    "consequent": "AIDS",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "anxiety",
+      "vomiting"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sunken_eyes",
+      "vomiting"
+    ],
+    "consequent": "Gastroenteritis",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "dehydration"
+    ],
+    "consequent": "Gastroenteritis",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "indigestion",
+      "vomiting"
+    ],
+    "consequent": "Peptic ulcer diseae",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "pain_behind_the_eyes"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "back_pain",
+      "vomiting"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "constipation",
+      "vomiting"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acute_liver_failure",
+      "vomiting"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swelling_of_stomach",
+      "vomiting"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "vomiting"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "phlegm"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "excessive_hunger",
+      "vomiting"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "drying_and_tingling_lips"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "slurred_speech",
+      "vomiting"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "spinning_movements"
+    ],
+    "consequent": "(vertigo) Paroymsal  Positional Vertigo",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "loss_of_balance"
+    ],
+    "consequent": "(vertigo) Paroymsal  Positional Vertigo",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "unsteadiness"
+    ],
+    "consequent": "(vertigo) Paroymsal  Positional Vertigo",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weakness_of_one_body_side",
+      "vomiting"
+    ],
+    "consequent": "Paralysis (brain hemorrhage)",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "passage_of_gases"
+    ],
+    "consequent": "Peptic ulcer diseae",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "internal_itching"
+    ],
+    "consequent": "Peptic ulcer diseae",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "toxic_look_(typhos)"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "vomiting"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "altered_sensorium",
+      "vomiting"
+    ],
+    "consequent": "Paralysis (brain hemorrhage)",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "red_spots_over_body"
+    ],
+    "consequent": "Dengue",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "belly_pain",
+      "vomiting"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "coma",
+      "vomiting"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "stomach_bleeding"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "distention_of_abdomen",
+      "vomiting"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "history_of_alcohol_consumption",
+      "vomiting"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "fluid_overload.1",
+      "vomiting"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blood_in_sputum",
+      "vomiting"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "vomiting",
+      "palpitations"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "spotting_ urination",
+      "burning_micturition"
+    ],
+    "consequent": "Drug Reaction",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "bladder_discomfort",
+      "burning_micturition"
+    ],
+    "consequent": "Urinary tract infection",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "foul_smell_of urine",
+      "burning_micturition"
+    ],
+    "consequent": "Urinary tract infection",
+    "support": 0.0183,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0178,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "continuous_feel_of_urine",
+      "burning_micturition"
+    ],
+    "consequent": "Urinary tract infection",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "fatigue",
+      "weight_gain"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "anxiety",
+      "fatigue"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cold_hands_and_feets",
+      "fatigue"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irregular_sugar_level",
+      "fatigue"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "pain_behind_the_eyes",
+      "fatigue"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "back_pain",
+      "fatigue"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "constipation",
+      "fatigue"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "fatigue",
+      "yellow_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acute_liver_failure",
+      "fatigue"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "fatigue",
+      "throat_irritation"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "redness_of_eyes",
+      "fatigue"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sinus_pressure",
+      "fatigue"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "fatigue",
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "congestion",
+      "fatigue"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dizziness",
+      "fatigue"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cramps",
+      "fatigue"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "bruising",
+      "fatigue"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swollen_legs",
+      "fatigue"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swollen_blood_vessels",
+      "fatigue"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "puffy_face_and_eyes",
+      "fatigue"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "fatigue",
+      "enlarged_thyroid"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "brittle_nails",
+      "fatigue"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swollen_extremeties",
+      "fatigue"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "drying_and_tingling_lips",
+      "fatigue"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "slurred_speech",
+      "fatigue"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "muscle_weakness",
+      "fatigue"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_smell",
+      "fatigue"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "toxic_look_(typhos)",
+      "fatigue"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "fatigue",
+      "depression"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "belly_pain",
+      "fatigue"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "increased_appetite",
+      "fatigue"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "polyuria",
+      "fatigue"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mucoid_sputum",
+      "fatigue"
+    ],
+    "consequent": "Bronchial Asthma",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "rusty_sputum",
+      "fatigue"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_blood_transfusion",
+      "fatigue"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_unsterile_injections",
+      "fatigue"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "coma",
+      "fatigue"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "stomach_bleeding",
+      "fatigue"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blood_in_sputum",
+      "fatigue"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "prominent_veins_on_calf",
+      "fatigue"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "palpitations",
+      "fatigue"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cold_hands_and_feets",
+      "weight_gain"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "weight_gain"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_gain",
+      "lethargy"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dizziness",
+      "weight_gain"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "puffy_face_and_eyes",
+      "weight_gain"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_gain",
+      "enlarged_thyroid"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "brittle_nails",
+      "weight_gain"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swollen_extremeties",
+      "weight_gain"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_gain",
+      "depression"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "weight_gain"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "weight_gain"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "anxiety",
+      "sweating"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "anxiety",
+      "headache"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "anxiety",
+      "nausea"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "anxiety",
+      "blurred_and_distorted_vision"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "anxiety",
+      "excessive_hunger"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "anxiety",
+      "drying_and_tingling_lips"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "anxiety",
+      "slurred_speech"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "anxiety",
+      "irritability"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "anxiety",
+      "palpitations"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "cold_hands_and_feets"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cold_hands_and_feets",
+      "lethargy"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dizziness",
+      "cold_hands_and_feets"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cold_hands_and_feets",
+      "puffy_face_and_eyes"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cold_hands_and_feets",
+      "enlarged_thyroid"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "brittle_nails",
+      "cold_hands_and_feets"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cold_hands_and_feets",
+      "swollen_extremeties"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cold_hands_and_feets",
+      "depression"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "cold_hands_and_feets"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "cold_hands_and_feets"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "weight_loss"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "restlessness"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "lethargy"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "sweating"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "diarrhoea"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "fast_heart_rate"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "dizziness"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "puffy_face_and_eyes"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "enlarged_thyroid"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "brittle_nails"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "swollen_extremeties"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "excessive_hunger"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "muscle_weakness"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mood_swings",
+      "depression"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "lethargy"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irregular_sugar_level",
+      "weight_loss"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "cough"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "breathlessness"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowish_skin",
+      "weight_loss"
+    ],
+    "consequent": "Jaundice",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "dark_urine"
+    ],
+    "consequent": "Jaundice",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "loss_of_appetite"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "abdominal_pain"
+    ],
+    "consequent": "Jaundice",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "diarrhoea"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "mild_fever"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "yellowing_of_eyes"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "malaise"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "weight_loss"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "phlegm"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "weight_loss"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "fast_heart_rate"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "obesity",
+      "weight_loss"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "muscle_weakness"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "irritability"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "weight_loss"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "increased_appetite"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "polyuria",
+      "weight_loss"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weight_loss",
+      "blood_in_sputum"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "restlessness",
+      "lethargy"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irregular_sugar_level",
+      "restlessness"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sweating",
+      "restlessness"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "restlessness",
+      "diarrhoea"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "restlessness"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "restlessness",
+      "fast_heart_rate"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "obesity",
+      "restlessness"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "muscle_weakness",
+      "restlessness"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "restlessness"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "restlessness"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "increased_appetite",
+      "restlessness"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "polyuria",
+      "restlessness"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irregular_sugar_level",
+      "lethargy"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "lethargy"
+    ],
+    "consequent": "Chicken pox",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "headache",
+      "lethargy"
+    ],
+    "consequent": "Chicken pox",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowish_skin",
+      "lethargy"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "lethargy",
+      "dark_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abdominal_pain",
+      "lethargy"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mild_fever",
+      "lethargy"
+    ],
+    "consequent": "Chicken pox",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "lethargy",
+      "yellow_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowing_of_eyes",
+      "lethargy"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "lethargy",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Chicken pox",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "lethargy"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dizziness",
+      "lethargy"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "obesity",
+      "lethargy"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "puffy_face_and_eyes",
+      "lethargy"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "enlarged_thyroid",
+      "lethargy"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "brittle_nails",
+      "lethargy"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swollen_extremeties",
+      "lethargy"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "excessive_hunger",
+      "lethargy"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "lethargy",
+      "depression"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "lethargy"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "red_spots_over_body",
+      "lethargy"
+    ],
+    "consequent": "Chicken pox",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "lethargy"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "increased_appetite",
+      "lethargy"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "polyuria",
+      "lethargy"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_blood_transfusion",
+      "lethargy"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_unsterile_injections",
+      "lethargy"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "patches_in_throat"
+    ],
+    "consequent": "AIDS",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "extra_marital_contacts",
+      "patches_in_throat"
+    ],
+    "consequent": "AIDS",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "irregular_sugar_level"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irregular_sugar_level",
+      "obesity"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irregular_sugar_level",
+      "excessive_hunger"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irregular_sugar_level",
+      "increased_appetite"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "polyuria",
+      "irregular_sugar_level"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "headache"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "loss_of_appetite"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "mild_fever"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "yellowing_of_eyes"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "throat_irritation"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "redness_of_eyes"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "sinus_pressure"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "congestion"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "fast_heart_rate"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "loss_of_smell"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "muscle_pain"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "family_history"
+    ],
+    "consequent": "Bronchial Asthma",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "mucoid_sputum"
+    ],
+    "consequent": "Bronchial Asthma",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "cough",
+      "rusty_sputum"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blood_in_sputum",
+      "cough"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "pain_behind_the_eyes"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "back_pain"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "constipation"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acute_liver_failure",
+      "high_fever"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "throat_irritation"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "redness_of_eyes"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "sinus_pressure"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "congestion"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "fast_heart_rate"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "extra_marital_contacts"
+    ],
+    "consequent": "AIDS",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "loss_of_smell"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "toxic_look_(typhos)"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "belly_pain"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "family_history"
+    ],
+    "consequent": "Bronchial Asthma",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "mucoid_sputum"
+    ],
+    "consequent": "Bronchial Asthma",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "rusty_sputum"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "coma",
+      "high_fever"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "stomach_bleeding"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "blood_in_sputum"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "high_fever",
+      "blister"
+    ],
+    "consequent": "Impetigo",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "red_sore_around_nose",
+      "high_fever"
+    ],
+    "consequent": "Impetigo",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellow_crust_ooze",
+      "high_fever"
+    ],
+    "consequent": "Impetigo",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sunken_eyes",
+      "dehydration"
+    ],
+    "consequent": "Gastroenteritis",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sunken_eyes",
+      "diarrhoea"
+    ],
+    "consequent": "Gastroenteritis",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "breathlessness",
+      "loss_of_appetite"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "breathlessness",
+      "mild_fever"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "breathlessness",
+      "yellowing_of_eyes"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "breathlessness",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "breathlessness",
+      "fast_heart_rate"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "breathlessness",
+      "family_history"
+    ],
+    "consequent": "Bronchial Asthma",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "breathlessness",
+      "mucoid_sputum"
+    ],
+    "consequent": "Bronchial Asthma",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "breathlessness",
+      "rusty_sputum"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blood_in_sputum",
+      "breathlessness"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sweating",
+      "loss_of_appetite"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sweating",
+      "mild_fever"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sweating",
+      "yellowing_of_eyes"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sweating",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "sweating"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sweating",
+      "drying_and_tingling_lips"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sweating",
+      "slurred_speech"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sweating",
+      "muscle_weakness"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sweating",
+      "muscle_pain"
+    ],
+    "consequent": "Malaria",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "sweating"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sweating",
+      "rusty_sputum"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sweating",
+      "blood_in_sputum"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sweating",
+      "palpitations"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dehydration",
+      "diarrhoea"
+    ],
+    "consequent": "Gastroenteritis",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "indigestion",
+      "headache"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "indigestion",
+      "loss_of_appetite"
+    ],
+    "consequent": "Peptic ulcer diseae",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "indigestion",
+      "abdominal_pain"
+    ],
+    "consequent": "Peptic ulcer diseae",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "indigestion"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "excessive_hunger",
+      "indigestion"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "indigestion",
+      "stiff_neck"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "indigestion",
+      "passage_of_gases"
+    ],
+    "consequent": "Peptic ulcer diseae",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "indigestion",
+      "internal_itching"
+    ],
+    "consequent": "Peptic ulcer diseae",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "indigestion",
+      "depression"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "indigestion"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "indigestion",
+      "visual_disturbances"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "pain_behind_the_eyes",
+      "headache"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "back_pain",
+      "headache"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "constipation",
+      "headache"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abdominal_pain",
+      "headache"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "headache",
+      "mild_fever"
+    ],
+    "consequent": "Chicken pox",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "headache",
+      "phlegm"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "headache",
+      "throat_irritation"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "redness_of_eyes",
+      "headache"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sinus_pressure",
+      "headache"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "headache",
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "congestion",
+      "headache"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dizziness",
+      "headache"
+    ],
+    "consequent": "Hypertension ",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "drying_and_tingling_lips",
+      "headache"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "slurred_speech",
+      "headache"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "headache",
+      "stiff_neck"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "headache",
+      "spinning_movements"
+    ],
+    "consequent": "(vertigo) Paroymsal  Positional Vertigo",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "headache",
+      "unsteadiness"
+    ],
+    "consequent": "(vertigo) Paroymsal  Positional Vertigo",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weakness_of_one_body_side",
+      "headache"
+    ],
+    "consequent": "Paralysis (brain hemorrhage)",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_smell",
+      "headache"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "toxic_look_(typhos)",
+      "headache"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "headache",
+      "depression"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "altered_sensorium",
+      "headache"
+    ],
+    "consequent": "Paralysis (brain hemorrhage)",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "belly_pain",
+      "headache"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "lack_of_concentration",
+      "headache"
+    ],
+    "consequent": "Hypertension ",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "headache",
+      "visual_disturbances"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "palpitations",
+      "headache"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowish_skin",
+      "diarrhoea"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowish_skin",
+      "mild_fever"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowish_skin",
+      "yellow_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acute_liver_failure",
+      "yellowish_skin"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowish_skin",
+      "swelling_of_stomach"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowish_skin",
+      "malaise"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowish_skin",
+      "muscle_pain"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowish_skin",
+      "family_history"
+    ],
+    "consequent": "Hepatitis C",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowish_skin",
+      "receiving_blood_transfusion"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_unsterile_injections",
+      "yellowish_skin"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "coma",
+      "yellowish_skin"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowish_skin",
+      "stomach_bleeding"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowish_skin",
+      "distention_of_abdomen"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowish_skin",
+      "history_of_alcohol_consumption"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowish_skin",
+      "fluid_overload.1"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dark_urine",
+      "diarrhoea"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mild_fever",
+      "dark_urine"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dark_urine",
+      "yellow_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acute_liver_failure",
+      "dark_urine"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "malaise",
+      "dark_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "muscle_pain",
+      "dark_urine"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_blood_transfusion",
+      "dark_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_unsterile_injections",
+      "dark_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "coma",
+      "dark_urine"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "stomach_bleeding",
+      "dark_urine"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "pain_behind_the_eyes"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "back_pain"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "constipation"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "mild_fever"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acute_liver_failure",
+      "nausea"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "malaise"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "nausea"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "excessive_hunger"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "drying_and_tingling_lips"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "slurred_speech"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "spinning_movements"
+    ],
+    "consequent": "(vertigo) Paroymsal  Positional Vertigo",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "loss_of_balance"
+    ],
+    "consequent": "(vertigo) Paroymsal  Positional Vertigo",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "unsteadiness"
+    ],
+    "consequent": "(vertigo) Paroymsal  Positional Vertigo",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "toxic_look_(typhos)"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "irritability"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "red_spots_over_body"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "belly_pain"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "family_history"
+    ],
+    "consequent": "Hepatitis C",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "coma",
+      "nausea"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "stomach_bleeding"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "nausea",
+      "palpitations"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "pain_behind_the_eyes",
+      "loss_of_appetite"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "back_pain",
+      "loss_of_appetite"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_appetite",
+      "diarrhoea"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_appetite",
+      "yellow_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acute_liver_failure",
+      "loss_of_appetite"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_appetite",
+      "phlegm"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "loss_of_appetite"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_appetite",
+      "passage_of_gases"
+    ],
+    "consequent": "Peptic ulcer diseae",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_appetite",
+      "internal_itching"
+    ],
+    "consequent": "Peptic ulcer diseae",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_appetite",
+      "family_history"
+    ],
+    "consequent": "Hepatitis C",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_blood_transfusion",
+      "loss_of_appetite"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_unsterile_injections",
+      "loss_of_appetite"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "coma",
+      "loss_of_appetite"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_appetite",
+      "stomach_bleeding"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blood_in_sputum",
+      "loss_of_appetite"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "back_pain",
+      "pain_behind_the_eyes"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "pain_behind_the_eyes",
+      "malaise"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "pain_behind_the_eyes",
+      "muscle_pain"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "pain_behind_the_eyes",
+      "red_spots_over_body"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "back_pain",
+      "malaise"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weakness_in_limbs",
+      "back_pain"
+    ],
+    "consequent": "Cervical spondylosis",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "neck_pain",
+      "back_pain"
+    ],
+    "consequent": "Cervical spondylosis",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dizziness",
+      "back_pain"
+    ],
+    "consequent": "Cervical spondylosis",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "back_pain",
+      "loss_of_balance"
+    ],
+    "consequent": "Cervical spondylosis",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "back_pain",
+      "muscle_pain"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "back_pain",
+      "red_spots_over_body"
+    ],
+    "consequent": "Dengue",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "constipation",
+      "abdominal_pain"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "constipation",
+      "diarrhoea"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "constipation",
+      "pain_during_bowel_movements"
+    ],
+    "consequent": "Dimorphic hemmorhoids(piles)",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "constipation",
+      "pain_in_anal_region"
+    ],
+    "consequent": "Dimorphic hemmorhoids(piles)",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "constipation",
+      "bloody_stool"
+    ],
+    "consequent": "Dimorphic hemmorhoids(piles)",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "constipation",
+      "irritation_in_anus"
+    ],
+    "consequent": "Dimorphic hemmorhoids(piles)",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "constipation",
+      "toxic_look_(typhos)"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "constipation",
+      "belly_pain"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abdominal_pain",
+      "mild_fever"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abdominal_pain",
+      "yellow_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acute_liver_failure",
+      "abdominal_pain"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swelling_of_stomach",
+      "abdominal_pain"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abdominal_pain",
+      "malaise"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abdominal_pain",
+      "passage_of_gases"
+    ],
+    "consequent": "Peptic ulcer diseae",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abdominal_pain",
+      "internal_itching"
+    ],
+    "consequent": "Peptic ulcer diseae",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abdominal_pain",
+      "toxic_look_(typhos)"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abdominal_pain",
+      "muscle_pain"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "belly_pain",
+      "abdominal_pain"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_blood_transfusion",
+      "abdominal_pain"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_unsterile_injections",
+      "abdominal_pain"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "coma",
+      "abdominal_pain"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abdominal_pain",
+      "stomach_bleeding"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "distention_of_abdomen",
+      "abdominal_pain"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "history_of_alcohol_consumption",
+      "abdominal_pain"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "fluid_overload.1",
+      "abdominal_pain"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mild_fever",
+      "diarrhoea"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowing_of_eyes",
+      "diarrhoea"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "fast_heart_rate",
+      "diarrhoea"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "excessive_hunger",
+      "diarrhoea"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "muscle_weakness",
+      "diarrhoea"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "toxic_look_(typhos)",
+      "diarrhoea"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "diarrhoea"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "belly_pain",
+      "diarrhoea"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "diarrhoea"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "phlegm",
+      "mild_fever"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "mild_fever"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mild_fever",
+      "muscle_pain"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "red_spots_over_body",
+      "mild_fever"
+    ],
+    "consequent": "Chicken pox",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blood_in_sputum",
+      "mild_fever"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowing_of_eyes",
+      "yellow_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "malaise",
+      "yellow_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_blood_transfusion",
+      "yellow_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_unsterile_injections",
+      "yellow_urine"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acute_liver_failure",
+      "yellowing_of_eyes"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowing_of_eyes",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowing_of_eyes",
+      "phlegm"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "yellowing_of_eyes"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowing_of_eyes",
+      "muscle_pain"
+    ],
+    "consequent": "hepatitis A",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowing_of_eyes",
+      "family_history"
+    ],
+    "consequent": "Hepatitis C",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_blood_transfusion",
+      "yellowing_of_eyes"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_unsterile_injections",
+      "yellowing_of_eyes"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "coma",
+      "yellowing_of_eyes"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellowing_of_eyes",
+      "stomach_bleeding"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blood_in_sputum",
+      "yellowing_of_eyes"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "coma",
+      "acute_liver_failure"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "acute_liver_failure",
+      "stomach_bleeding"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "distention_of_abdomen",
+      "swelling_of_stomach"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swelling_of_stomach",
+      "history_of_alcohol_consumption"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swelling_of_stomach",
+      "fluid_overload.1"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "throat_irritation",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "redness_of_eyes",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sinus_pressure",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swelled_lymph_nodes",
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "congestion",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_smell",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swelled_lymph_nodes",
+      "muscle_pain"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "red_spots_over_body",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Chicken pox",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blood_in_sputum",
+      "swelled_lymph_nodes"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "malaise",
+      "throat_irritation"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "redness_of_eyes",
+      "malaise"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sinus_pressure",
+      "malaise"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "malaise",
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "congestion",
+      "malaise"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "malaise",
+      "fast_heart_rate"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_smell",
+      "malaise"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "rusty_sputum",
+      "malaise"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_blood_transfusion",
+      "malaise"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_unsterile_injections",
+      "malaise"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blood_in_sputum",
+      "malaise"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "obesity"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "drying_and_tingling_lips"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "slurred_speech"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "stiff_neck"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "depression"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "increased_appetite"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "polyuria"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "visual_disturbances"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blurred_and_distorted_vision",
+      "palpitations"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "throat_irritation",
+      "phlegm"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "redness_of_eyes",
+      "phlegm"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sinus_pressure",
+      "phlegm"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "phlegm",
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "congestion",
+      "phlegm"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "phlegm",
+      "fast_heart_rate"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_smell",
+      "phlegm"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "phlegm",
+      "muscle_pain"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "rusty_sputum",
+      "phlegm"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "blood_in_sputum",
+      "phlegm"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "redness_of_eyes",
+      "throat_irritation"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sinus_pressure",
+      "throat_irritation"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "throat_irritation",
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "congestion",
+      "throat_irritation"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "throat_irritation"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_smell",
+      "throat_irritation"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "throat_irritation",
+      "muscle_pain"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sinus_pressure",
+      "redness_of_eyes"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "redness_of_eyes",
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "congestion",
+      "redness_of_eyes"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "redness_of_eyes"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_smell",
+      "redness_of_eyes"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "redness_of_eyes",
+      "muscle_pain"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sinus_pressure",
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "congestion",
+      "sinus_pressure"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "sinus_pressure"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_smell",
+      "sinus_pressure"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "sinus_pressure",
+      "muscle_pain"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "congestion",
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_smell",
+      "runny_nose"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "runny_nose",
+      "muscle_pain"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "congestion"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_smell",
+      "congestion"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "congestion",
+      "muscle_pain"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "fast_heart_rate"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "dizziness"
+    ],
+    "consequent": "Hypertension ",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "loss_of_balance"
+    ],
+    "consequent": "Hypertension ",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "loss_of_smell"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "muscle_pain"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "rusty_sputum"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "lack_of_concentration"
+    ],
+    "consequent": "Hypertension ",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "chest_pain",
+      "blood_in_sputum"
+    ],
+    "consequent": "Tuberculosis",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "neck_pain",
+      "weakness_in_limbs"
+    ],
+    "consequent": "Cervical spondylosis",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weakness_in_limbs",
+      "dizziness"
+    ],
+    "consequent": "Cervical spondylosis",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "weakness_in_limbs",
+      "loss_of_balance"
+    ],
+    "consequent": "Cervical spondylosis",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "excessive_hunger",
+      "fast_heart_rate"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "muscle_weakness",
+      "fast_heart_rate"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "fast_heart_rate"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "fast_heart_rate"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "rusty_sputum",
+      "fast_heart_rate"
+    ],
+    "consequent": "Pneumonia",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "pain_in_anal_region",
+      "pain_during_bowel_movements"
+    ],
+    "consequent": "Dimorphic hemmorhoids(piles)",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "bloody_stool",
+      "pain_during_bowel_movements"
+    ],
+    "consequent": "Dimorphic hemmorhoids(piles)",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritation_in_anus",
+      "pain_during_bowel_movements"
+    ],
+    "consequent": "Dimorphic hemmorhoids(piles)",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "bloody_stool",
+      "pain_in_anal_region"
+    ],
+    "consequent": "Dimorphic hemmorhoids(piles)",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritation_in_anus",
+      "pain_in_anal_region"
+    ],
+    "consequent": "Dimorphic hemmorhoids(piles)",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "bloody_stool",
+      "irritation_in_anus"
+    ],
+    "consequent": "Dimorphic hemmorhoids(piles)",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "neck_pain",
+      "dizziness"
+    ],
+    "consequent": "Cervical spondylosis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "knee_pain",
+      "neck_pain"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "hip_joint_pain",
+      "neck_pain"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "neck_pain",
+      "swelling_joints"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "neck_pain",
+      "loss_of_balance"
+    ],
+    "consequent": "Cervical spondylosis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "neck_pain",
+      "painful_walking"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dizziness",
+      "puffy_face_and_eyes"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dizziness",
+      "enlarged_thyroid"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "brittle_nails",
+      "dizziness"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dizziness",
+      "swollen_extremeties"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dizziness",
+      "depression"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dizziness",
+      "irritability"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "dizziness"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "dizziness",
+      "lack_of_concentration"
+    ],
+    "consequent": "Hypertension ",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "bruising",
+      "cramps"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "obesity",
+      "cramps"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swollen_legs",
+      "cramps"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swollen_blood_vessels",
+      "cramps"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "prominent_veins_on_calf",
+      "cramps"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "obesity",
+      "bruising"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "bruising",
+      "swollen_legs"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "bruising",
+      "swollen_blood_vessels"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "prominent_veins_on_calf",
+      "bruising"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "obesity",
+      "swollen_legs"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "obesity",
+      "swollen_blood_vessels"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "obesity",
+      "excessive_hunger"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "obesity",
+      "increased_appetite"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "polyuria",
+      "obesity"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "obesity",
+      "prominent_veins_on_calf"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swollen_legs",
+      "swollen_blood_vessels"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "prominent_veins_on_calf",
+      "swollen_legs"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "prominent_veins_on_calf",
+      "swollen_blood_vessels"
+    ],
+    "consequent": "Varicose veins",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "puffy_face_and_eyes",
+      "enlarged_thyroid"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "brittle_nails",
+      "puffy_face_and_eyes"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "puffy_face_and_eyes",
+      "swollen_extremeties"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "puffy_face_and_eyes",
+      "depression"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "puffy_face_and_eyes"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "puffy_face_and_eyes"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "brittle_nails",
+      "enlarged_thyroid"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swollen_extremeties",
+      "enlarged_thyroid"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "enlarged_thyroid",
+      "depression"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "enlarged_thyroid"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "enlarged_thyroid"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "brittle_nails",
+      "swollen_extremeties"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "brittle_nails",
+      "depression"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "brittle_nails",
+      "irritability"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "brittle_nails"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swollen_extremeties",
+      "depression"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "swollen_extremeties"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "swollen_extremeties"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "excessive_hunger",
+      "drying_and_tingling_lips"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "excessive_hunger",
+      "slurred_speech"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "muscle_weakness",
+      "excessive_hunger"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "excessive_hunger",
+      "stiff_neck"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "excessive_hunger",
+      "depression"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "excessive_hunger"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "excessive_hunger",
+      "increased_appetite"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "polyuria",
+      "excessive_hunger"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "excessive_hunger",
+      "visual_disturbances"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "excessive_hunger",
+      "palpitations"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "slurred_speech",
+      "drying_and_tingling_lips"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "drying_and_tingling_lips"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "drying_and_tingling_lips",
+      "palpitations"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0232,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0226,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "slurred_speech",
+      "irritability"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "slurred_speech",
+      "palpitations"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "knee_pain",
+      "hip_joint_pain"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "knee_pain",
+      "swelling_joints"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "knee_pain",
+      "painful_walking"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "hip_joint_pain",
+      "swelling_joints"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "hip_joint_pain",
+      "painful_walking"
+    ],
+    "consequent": "Osteoarthristis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "muscle_weakness",
+      "stiff_neck"
+    ],
+    "consequent": "Arthritis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "muscle_weakness",
+      "swelling_joints"
+    ],
+    "consequent": "Arthritis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "muscle_weakness",
+      "movement_stiffness"
+    ],
+    "consequent": "Arthritis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "muscle_weakness",
+      "irritability"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "muscle_weakness"
+    ],
+    "consequent": "Hyperthyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "muscle_weakness",
+      "painful_walking"
+    ],
+    "consequent": "Arthritis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "swelling_joints",
+      "stiff_neck"
+    ],
+    "consequent": "Arthritis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "movement_stiffness",
+      "stiff_neck"
+    ],
+    "consequent": "Arthritis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "stiff_neck",
+      "depression"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "stiff_neck"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "visual_disturbances",
+      "stiff_neck"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "painful_walking",
+      "stiff_neck"
+    ],
+    "consequent": "Arthritis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "movement_stiffness",
+      "swelling_joints"
+    ],
+    "consequent": "Arthritis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "movement_stiffness",
+      "painful_walking"
+    ],
+    "consequent": "Arthritis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_balance",
+      "spinning_movements"
+    ],
+    "consequent": "(vertigo) Paroymsal  Positional Vertigo",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "unsteadiness",
+      "spinning_movements"
+    ],
+    "consequent": "(vertigo) Paroymsal  Positional Vertigo",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_balance",
+      "unsteadiness"
+    ],
+    "consequent": "(vertigo) Paroymsal  Positional Vertigo",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "lack_of_concentration",
+      "loss_of_balance"
+    ],
+    "consequent": "Hypertension ",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "altered_sensorium",
+      "weakness_of_one_body_side"
+    ],
+    "consequent": "Paralysis (brain hemorrhage)",
+    "support": 0.0207,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0202,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "loss_of_smell",
+      "muscle_pain"
+    ],
+    "consequent": "Common Cold",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "foul_smell_of urine",
+      "bladder_discomfort"
+    ],
+    "consequent": "Urinary tract infection",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "continuous_feel_of_urine",
+      "bladder_discomfort"
+    ],
+    "consequent": "Urinary tract infection",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "continuous_feel_of_urine",
+      "foul_smell_of urine"
+    ],
+    "consequent": "Urinary tract infection",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "internal_itching",
+      "passage_of_gases"
+    ],
+    "consequent": "Peptic ulcer diseae",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "belly_pain",
+      "toxic_look_(typhos)"
+    ],
+    "consequent": "Typhoid",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "abnormal_menstruation",
+      "depression"
+    ],
+    "consequent": "Hypothyroidism",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "visual_disturbances",
+      "depression"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "visual_disturbances"
+    ],
+    "consequent": "Migraine",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "irritability",
+      "palpitations"
+    ],
+    "consequent": "Hypoglycemia",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "red_spots_over_body",
+      "muscle_pain"
+    ],
+    "consequent": "Dengue",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "polyuria",
+      "increased_appetite"
+    ],
+    "consequent": "Diabetes ",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "mucoid_sputum",
+      "family_history"
+    ],
+    "consequent": "Bronchial Asthma",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "receiving_unsterile_injections",
+      "receiving_blood_transfusion"
+    ],
+    "consequent": "Hepatitis B",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "coma",
+      "stomach_bleeding"
+    ],
+    "consequent": "Hepatitis E",
+    "support": 0.0244,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0238,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "distention_of_abdomen",
+      "history_of_alcohol_consumption"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "distention_of_abdomen",
+      "fluid_overload.1"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "fluid_overload.1",
+      "history_of_alcohol_consumption"
+    ],
+    "consequent": "Alcoholic hepatitis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "pus_filled_pimples",
+      "blackheads"
+    ],
+    "consequent": "Acne",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "pus_filled_pimples",
+      "scurring"
+    ],
+    "consequent": "Acne",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "scurring",
+      "blackheads"
+    ],
+    "consequent": "Acne",
+    "support": 0.0195,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.019,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "silver_like_dusting",
+      "skin_peeling"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_peeling",
+      "small_dents_in_nails"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "skin_peeling",
+      "inflammatory_nails"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "silver_like_dusting",
+      "small_dents_in_nails"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "silver_like_dusting",
+      "inflammatory_nails"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "inflammatory_nails",
+      "small_dents_in_nails"
+    ],
+    "consequent": "Psoriasis",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "red_sore_around_nose",
+      "blister"
+    ],
+    "consequent": "Impetigo",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "yellow_crust_ooze",
+      "blister"
+    ],
+    "consequent": "Impetigo",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  },
+  {
+    "antecedents": [
+      "red_sore_around_nose",
+      "yellow_crust_ooze"
+    ],
+    "consequent": "Impetigo",
+    "support": 0.022,
+    "confidence": 1.0,
+    "lift": 41.0,
+    "leverage": 0.0214,
+    "conviction": 999.0
+  }
+]
