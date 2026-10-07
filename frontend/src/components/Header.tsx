@@ -9,11 +9,12 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, serverHealthy }) => {
   const tabs = [
-    { id: "recommender", label: "Disease Recommender", icon: Activity },
+    { id: "home", label: "Overview", icon: BookOpen },
+    { id: "recommender", label: "Symptom Assessment", icon: Activity },
     { id: "comparison", label: "RST vs ML Lab", icon: GitCompare },
-    { id: "rst_theory", label: "Rough Set Theory & Reducts", icon: Layers },
-    { id: "rules", label: "Association Rules", icon: BookOpen },
-    { id: "benchmarks", label: "Empirical Benchmarks", icon: BarChart3 },
+    { id: "rst_theory", label: "Rough Set & Reducts", icon: Layers },
+    { id: "rules", label: "Association Rules", icon: Cpu },
+    { id: "benchmarks", label: "Faculty Benchmarks", icon: BarChart3 },
   ];
 
   return (

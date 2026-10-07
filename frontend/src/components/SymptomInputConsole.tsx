@@ -139,21 +139,38 @@ export const SymptomInputConsole: React.FC<SymptomInputConsoleProps> = ({
           </div>
         </div>
 
-        {/* Input Metrics Badge */}
-        <div className="flex items-center gap-2 bg-slate-900/90 px-3 py-1.5 rounded-xl border border-slate-800 self-start lg:self-auto">
-          <div className="flex items-center gap-1 text-xs text-emerald-400 font-mono">
-            <CheckCircle2 className="w-3.5 h-3.5" />
-            <span>{stats.present} Present (1)</span>
+        {/* Input Metrics Badge with Progress Indicator */}
+        <div className="flex flex-col gap-2 bg-slate-900/90 p-3 rounded-xl border border-slate-800 self-start lg:self-auto min-w-[280px]">
+          <div className="flex items-center justify-between gap-4 text-xs">
+            <span className="font-semibold text-white">
+              <strong className="text-brand-400">{stats.present + stats.absent}</strong> of 132 symptoms answered
+            </span>
+            <span className="font-semibold text-amber-400 font-mono">
+              {stats.unknown} unknown
+            </span>
           </div>
-          <span className="text-slate-600">•</span>
-          <div className="flex items-center gap-1 text-xs text-slate-400 font-mono">
-            <XCircle className="w-3.5 h-3.5" />
-            <span>{stats.absent} Absent (0)</span>
+
+          {/* Progress Indicator Bar */}
+          <div className="w-full bg-slate-950 h-2 rounded-full overflow-hidden border border-slate-800">
+            <div
+              className="h-full bg-gradient-to-r from-brand-500 via-indigo-500 to-emerald-500 transition-all duration-300"
+              style={{ width: `${((stats.present + stats.absent) / 132) * 100}%` }}
+            />
           </div>
-          <span className="text-slate-600">•</span>
-          <div className="flex items-center gap-1 text-xs text-amber-400 font-mono font-bold">
-            <HelpCircle className="w-3.5 h-3.5" />
-            <span>{stats.unknown} Unknown (?)</span>
+
+          <div className="flex items-center justify-between text-[11px] text-slate-400 font-mono pt-0.5">
+            <span className="text-emerald-400 flex items-center gap-1">
+              <CheckCircle2 className="w-3 h-3" />
+              {stats.present} Yes
+            </span>
+            <span className="text-slate-400 flex items-center gap-1">
+              <XCircle className="w-3 h-3" />
+              {stats.absent} No
+            </span>
+            <span className="text-amber-400 font-bold flex items-center gap-1">
+              <HelpCircle className="w-3 h-3" />
+              {stats.unknown} Unknown
+            </span>
           </div>
         </div>
       </div>
@@ -256,10 +273,10 @@ export const SymptomInputConsole: React.FC<SymptomInputConsoleProps> = ({
                       ? "bg-emerald-600 text-white shadow-sm"
                       : "text-slate-400 hover:text-emerald-400 hover:bg-emerald-950/40"
                   }`}
-                  title="Present (1)"
+                  title="Present / Yes (1)"
                 >
                   <CheckCircle2 className="w-3 h-3" />
-                  <span>1</span>
+                  <span>YES</span>
                 </button>
                 <button
                   type="button"
@@ -269,10 +286,10 @@ export const SymptomInputConsole: React.FC<SymptomInputConsoleProps> = ({
                       ? "bg-slate-700 text-white shadow-sm"
                       : "text-slate-400 hover:text-slate-200 hover:bg-slate-800/40"
                   }`}
-                  title="Absent (0)"
+                  title="Absent / No (0)"
                 >
                   <XCircle className="w-3 h-3" />
-                  <span>0</span>
+                  <span>NO</span>
                 </button>
                 <button
                   type="button"
@@ -282,7 +299,7 @@ export const SymptomInputConsole: React.FC<SymptomInputConsoleProps> = ({
                       ? "bg-amber-600/90 text-white shadow-sm"
                       : "text-slate-400 hover:text-amber-400 hover:bg-amber-950/40"
                   }`}
-                  title="Unknown / Not Provided (?)"
+                  title="Unknown / Unspecified (?)"
                 >
                   <HelpCircle className="w-3 h-3" />
                   <span>?</span>
@@ -295,13 +312,16 @@ export const SymptomInputConsole: React.FC<SymptomInputConsoleProps> = ({
 
       {/* Action Footer */}
       <div className="pt-3 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <div className="text-xs text-slate-400">
-          Showing <strong className="text-white">{filteredSymptoms.length}</strong> of 132 symptoms
-          {stats.present === 0 && (
-            <span className="text-amber-400/90 ml-2 italic">
-              (Tip: Select at least 1-2 present symptoms or load a preset scenario)
-            </span>
-          )}
+        <div className="flex items-center gap-3 text-xs text-slate-400">
+          <span>
+            Showing <strong className="text-white">{filteredSymptoms.length}</strong> of 132 symptoms
+          </span>
+          <button
+            onClick={handleSetAllUnknown}
+            className="text-xs text-slate-400 hover:text-amber-300 underline underline-offset-2 transition-colors cursor-pointer"
+          >
+            Reset All to Unknown (?)
+          </button>
         </div>
 
         <button
@@ -312,12 +332,12 @@ export const SymptomInputConsole: React.FC<SymptomInputConsoleProps> = ({
           {isLoading ? (
             <>
               <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-              <span>Computing Rough Set Tolerance...</span>
+              <span>Analyzing Symptoms via Rough Sets...</span>
             </>
           ) : (
             <>
               <Sparkles className="w-4 h-4" />
-              <span>Evaluate Rough Set Recommendation</span>
+              <span>Analyze Symptoms (RST Recommender)</span>
             </>
           )}
         </button>

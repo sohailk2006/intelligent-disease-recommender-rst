@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Header } from "./components/Header";
+import { HomeView } from "./components/HomeView";
 import { SymptomInputConsole } from "./components/SymptomInputConsole";
 import { RecommendationView } from "./components/RecommendationView";
 import { ComparisonLab } from "./components/ComparisonLab";
@@ -12,18 +13,21 @@ import type {
   SymptomValue,
   RecommendResponse,
   CompareResponse,
+  SystemMetadata,
 } from "./types";
 import {
   fetchSymptoms,
   fetchPresets,
+  fetchMetadata,
   predictRecommendation,
   compareWithBaselines,
 } from "./api/client";
 
 export const App: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<string>("recommender");
+  const [activeTab, setActiveTab] = useState<string>("home");
   const [symptoms, setSymptoms] = useState<Symptom[]>([]);
   const [presets, setPresets] = useState<PresetScenario[]>([]);
+  const [metadata, setMetadata] = useState<SystemMetadata | null>(null);
   const [queryValues, setQueryValues] = useState<Record<string, SymptomValue>>({});
   const [recommendationResult, setRecommendationResult] = useState<RecommendResponse | null>(null);
   const [comparisonResult, setComparisonResult] = useState<CompareResponse | null>(null);
@@ -37,12 +41,14 @@ export const App: React.FC = () => {
   useEffect(() => {
     async function init() {
       try {
-        const [sympData, presetData] = await Promise.all([
+        const [sympData, presetData, metaData] = await Promise.all([
           fetchSymptoms(),
           fetchPresets(),
+          fetchMetadata(),
         ]);
         setSymptoms(sympData.symptoms);
         setPresets(presetData.presets);
+        setMetadata(metaData);
 
         // Initialize all query symptoms to unknown ('?')
         const initialQuery: Record<string, SymptomValue> = {};
@@ -155,6 +161,16 @@ export const App: React.FC = () => {
               ×
             </button>
           </div>
+        )}
+
+        {/* Tab 0: Home / Overview View */}
+        {activeTab === "home" && (
+          <HomeView
+            onStartAssessment={() => setActiveTab("recommender")}
+            onExploreBenchmarks={() => setActiveTab("benchmarks")}
+            onExploreTheory={() => setActiveTab("rst_theory")}
+            metadata={metadata}
+          />
         )}
 
         {/* Tab 1: Interactive Disease Recommender */}

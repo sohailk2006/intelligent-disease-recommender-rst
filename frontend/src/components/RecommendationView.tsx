@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   CheckCircle,
   Info,
   Clock,
   Layers,
-  Sparkles,
   HelpCircle,
   TrendingUp,
   FileText,
   ArrowRight,
   ShieldCheck,
   Split,
+  ChevronDown,
+  ChevronUp,
+  AlertCircle,
 } from "lucide-react";
 import type { RecommendResponse } from "../types";
 
@@ -25,6 +27,8 @@ export const RecommendationView: React.FC<RecommendationViewProps> = ({
   isLoading,
   onExploreComparison,
 }) => {
+  const [isReasoningExpanded, setIsReasoningExpanded] = useState<boolean>(true);
+
   if (isLoading) {
     return (
       <div className="glass-panel rounded-2xl p-8 border border-slate-800 text-center flex flex-col items-center justify-center gap-3">
@@ -45,7 +49,7 @@ export const RecommendationView: React.FC<RecommendationViewProps> = ({
         <Layers className="w-10 h-10 text-slate-600" />
         <h3 className="text-sm font-semibold text-slate-300">No Active Recommendation</h3>
         <p className="text-xs max-w-md text-slate-500">
-          Select symptom attributes above or click one of the clinical presets (e.g. Dengue, Malaria, Diabetes) and click "Evaluate Rough Set Recommendation".
+          Select symptom attributes above or click one of the clinical presets (e.g. Dengue, Malaria, Diabetes) and click "Analyze Symptoms".
         </p>
       </div>
     );
@@ -56,6 +60,10 @@ export const RecommendationView: React.FC<RecommendationViewProps> = ({
   const candidates = result.top_candidates;
   const rules = result.matched_association_rules;
 
+  // Determine Certainty State
+  const isInsufficientInfo = reasoning.known_symptoms_count === 0 || reasoning.tolerance_class_size === 0 || !primary;
+  const isCertain = primary?.approximation_code === "LOWER" && !reasoning.boundary_uncertainty;
+
   // Approximation Badge styling
   const getApproxBadge = (code: string) => {
     switch (code) {
@@ -64,21 +72,21 @@ export const RecommendationView: React.FC<RecommendationViewProps> = ({
           bg: "bg-emerald-500/15 border-emerald-500/30 text-emerald-400",
           icon: ShieldCheck,
           label: "Pawlak Lower Approximation B_*(X) — Deterministic Certainty",
-          desc: "The query's tolerance class [q]_T is a subset of this disease class. All matching reference objects belong exclusively to this condition.",
+          desc: "The query's tolerance neighborhood [q]_T is a strict subset of this disease class. All matching reference objects belong exclusively to this condition.",
         };
       case "BOUNDARY":
         return {
           bg: "bg-amber-500/15 border-amber-500/30 text-amber-400",
           icon: Split,
-          label: "Pawlak Boundary Region BN_B(X) — Incomplete Information Uncertainty",
-          desc: "The query matches objects across multiple disease classes due to unknown ('?') symptoms. Discernibility is incomplete.",
+          label: "Pawlak Boundary Region BN_B(X) — Incomplete Information Ambiguity",
+          desc: "The query matches training objects across multiple disease classes due to unknown ('?') symptoms. Discernibility is incomplete.",
         };
       default:
         return {
           bg: "bg-indigo-500/15 border-indigo-500/30 text-indigo-400",
           icon: Info,
           label: "Pawlak Upper Approximation B^*(X) — Plausible Candidate",
-          desc: "Non-empty intersection between query tolerance class and this disease class.",
+          desc: "Non-empty intersection between query tolerance neighborhood and this disease class.",
         };
     }
   };
@@ -87,30 +95,75 @@ export const RecommendationView: React.FC<RecommendationViewProps> = ({
 
   return (
     <div className="flex flex-col gap-6 animate-fadeIn">
-      {/* Primary Recommendation Hero Card */}
-      {primary ? (
-        <div className="glass-panel rounded-2xl p-6 border border-brand-500/30 relative overflow-hidden shadow-2xl">
+      {/* STATE 1: Insufficient Information State */}
+      {isInsufficientInfo ? (
+        <div className="glass-panel rounded-2xl p-6 border border-amber-800/60 bg-amber-950/20 flex flex-col gap-3">
+          <div className="flex items-center gap-2 text-amber-400">
+            <AlertCircle className="w-5 h-5" />
+            <h3 className="text-base font-bold">
+              Insufficient Information: All 132 Symptoms Unspecified
+            </h3>
+          </div>
+          <p className="text-xs text-slate-300 leading-relaxed">
+            Because no symptoms were specified as present (1) or absent (0), the query's compatibility/tolerance neighborhood <code className="text-amber-300 font-mono">[q]_T</code> spans the entire universe ($N = 4,920$). Every disease class shares an identical uniform baseline rough membership degree ($\mu = 120 / 4920 = 2.44\%$).
+          </p>
+          <p className="text-xs text-amber-200/80">
+            <strong>Action Required:</strong> Please specify at least 1-2 positive or negative symptoms using the console above, or click any of the <strong>Clinical Presets</strong> to evaluate live disease reasoning.
+          </p>
+        </div>
+      ) : (
+        /* STATE 2 & 3: Certain Recommendation OR Candidate Recommendations (Ambiguous) */
+        <div
+          className={`glass-panel rounded-2xl p-6 border relative overflow-hidden shadow-2xl ${
+            isCertain
+              ? "border-emerald-500/40 bg-slate-900/40"
+              : "border-amber-500/40 bg-slate-900/40"
+          }`}
+        >
           <div className="absolute top-0 right-0 w-80 h-80 bg-brand-500/5 rounded-full blur-3xl pointer-events-none" />
 
           {/* Header Row */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-slate-800">
             <div>
-              <span className="text-[11px] font-semibold tracking-wider uppercase text-brand-400 flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5" />
-                Primary Recommendation (Rough Set Decision Support)
+              <span
+                className={`text-[11px] font-semibold tracking-wider uppercase flex items-center gap-1.5 ${
+                  isCertain ? "text-emerald-400" : "text-amber-400"
+                }`}
+              >
+                {isCertain ? (
+                  <>
+                    <ShieldCheck className="w-3.5 h-3.5" />
+                    Certain Recommendation (Lower Approximation)
+                  </>
+                ) : (
+                  <>
+                    <Split className="w-3.5 h-3.5" />
+                    Candidate Recommendations (Boundary Uncertainty — {candidates.length} Possible Diseases)
+                  </>
+                )}
               </span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-white mt-1">
-                {primary.disease}
+
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-white mt-1 flex items-center gap-2">
+                {primary?.disease}
+                {!isCertain && (
+                  <span className="text-xs font-mono font-normal px-2 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800">
+                    Lead Candidate
+                  </span>
+                )}
               </h2>
             </div>
 
             <div className="flex items-center gap-3">
               <div className="text-right">
-                <div className="text-2xl font-black text-brand-400 font-mono">
-                  {primary.confidence_percentage}%
+                <div
+                  className={`text-2xl font-black font-mono ${
+                    isCertain ? "text-emerald-400" : "text-amber-400"
+                  }`}
+                >
+                  {primary?.confidence_percentage}%
                 </div>
                 <div className="text-[10px] text-slate-400 font-mono">
-                  Rough Membership μ(q) = {primary.membership_degree}
+                  Rough Membership μ(q) = {primary?.membership_degree}
                 </div>
               </div>
 
@@ -121,7 +174,7 @@ export const RecommendationView: React.FC<RecommendationViewProps> = ({
             </div>
           </div>
 
-          {/* Pawlak Approximation Status Alert */}
+          {/* Approximation Status Alert */}
           {primaryBadge && (
             <div className={`mt-4 p-3.5 rounded-xl border flex items-start gap-3 ${primaryBadge.bg}`}>
               <primaryBadge.icon className="w-5 h-5 shrink-0 mt-0.5" />
@@ -132,11 +185,11 @@ export const RecommendationView: React.FC<RecommendationViewProps> = ({
             </div>
           )}
 
-          {/* Rough Set Quantitative Evidence Grid */}
+          {/* Quantitative Evidence Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4">
             <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800">
               <span className="text-[10px] text-slate-400 uppercase tracking-wider block">
-                Tolerance Class [q]_T
+                Tolerance Neighborhood [q]_T
               </span>
               <span className="text-lg font-bold text-white font-mono">
                 {reasoning.tolerance_class_size} objects
@@ -191,9 +244,9 @@ export const RecommendationView: React.FC<RecommendationViewProps> = ({
           <div className="mt-4 pt-4 border-t border-slate-800/80 flex flex-col gap-3">
             <div>
               <span className="text-xs font-semibold text-slate-300 block mb-1.5">
-                Diagnostic Evidence: Aligned Present Symptoms for {primary.disease}
+                Diagnostic Evidence: Aligned Present Symptoms for {primary?.disease}
               </span>
-              {primary.aligned_symptoms.length > 0 ? (
+              {primary?.aligned_symptoms && primary.aligned_symptoms.length > 0 ? (
                 <div className="flex flex-wrap gap-1.5">
                   {primary.aligned_symptoms.map((s) => (
                     <span
@@ -216,7 +269,7 @@ export const RecommendationView: React.FC<RecommendationViewProps> = ({
             {reasoning.reduct_alignment && reasoning.reduct_alignment.known_reduct_attributes.length > 0 && (
               <div>
                 <span className="text-xs font-semibold text-slate-300 block mb-1.5">
-                  Minimal Reduct Symptoms in Patient Query:
+                  Minimal Reduct Symptoms Active in Patient Query:
                 </span>
                 <div className="flex flex-wrap gap-1.5">
                   {reasoning.reduct_alignment.known_reduct_attributes.map((attr) => (
@@ -232,7 +285,134 @@ export const RecommendationView: React.FC<RecommendationViewProps> = ({
             )}
           </div>
         </div>
-      ) : null}
+      )}
+
+      {/* SECTION 4: Expandable "How the System Reasoned" Pipeline */}
+      <div className="glass-panel rounded-2xl border border-slate-800 overflow-hidden">
+        <button
+          onClick={() => setIsReasoningExpanded(!isReasoningExpanded)}
+          className="w-full p-4 bg-slate-900/60 hover:bg-slate-900/90 transition-colors flex items-center justify-between text-left cursor-pointer"
+        >
+          <div className="flex items-center gap-2">
+            <Layers className="w-4 h-4 text-brand-400" />
+            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-200">
+              How the System Reasoned (RST Tolerance Pipeline)
+            </h4>
+          </div>
+          <div className="flex items-center gap-2 text-xs text-slate-400">
+            <span>{isReasoningExpanded ? "Collapse" : "Expand"} Explanation</span>
+            {isReasoningExpanded ? (
+              <ChevronUp className="w-4 h-4 text-slate-400" />
+            ) : (
+              <ChevronDown className="w-4 h-4 text-slate-400" />
+            )}
+          </div>
+        </button>
+
+        {isReasoningExpanded && (
+          <div className="p-5 flex flex-col gap-4 border-t border-slate-800/80 bg-slate-950/50">
+            {/* Visual Flowchart */}
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-3">
+              {/* Step 1 */}
+              <div className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between gap-2">
+                <div>
+                  <div className="flex items-center justify-between text-[10px] text-slate-500 font-mono mb-1">
+                    <span>STEP 1</span>
+                    <span className="text-brand-400 font-bold">{reasoning.known_symptoms_count} attrs</span>
+                  </div>
+                  <strong className="text-xs text-white block">Known Symptoms Ingested</strong>
+                  <p className="text-[11px] text-slate-400 mt-1 leading-snug">
+                    Query symptoms partitioned into known attributes (values 0 or 1) and unknown (?). Unknown symptoms are preserved without penalty.
+                  </p>
+                </div>
+                <div className="text-[10px] text-emerald-400 font-mono">
+                  Never imputed as 0
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between gap-2">
+                <div>
+                  <div className="flex items-center justify-between text-[10px] text-slate-500 font-mono mb-1">
+                    <span>STEP 2</span>
+                    <span className="text-cyan-400 font-bold">Relation T(q, x)</span>
+                  </div>
+                  <strong className="text-xs text-white block">Tolerance Neighborhood</strong>
+                  <p className="text-[11px] text-slate-400 mt-1 leading-snug">
+                    Computes compatibility relation T(q, x) comparing objects only on known attributes.
+                  </p>
+                </div>
+                <div className="text-[10px] text-cyan-400 font-mono">
+                  Non-transitive neighborhood
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between gap-2">
+                <div>
+                  <div className="flex items-center justify-between text-[10px] text-slate-500 font-mono mb-1">
+                    <span>STEP 3</span>
+                    <span className="text-indigo-400 font-bold">{reasoning.tolerance_class_size} records</span>
+                  </div>
+                  <strong className="text-xs text-white block">Compatible Reference Objects</strong>
+                  <p className="text-[11px] text-slate-400 mt-1 leading-snug">
+                    Extracts reference profiles in [q]_T from U (N = 4,920) matching known query symptoms.
+                  </p>
+                </div>
+                <div className="text-[10px] text-indigo-400 font-mono">
+                  {reasoning.tolerance_class_size} of 4,920 selected
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between gap-2">
+                <div>
+                  <div className="flex items-center justify-between text-[10px] text-slate-500 font-mono mb-1">
+                    <span>STEP 4</span>
+                    <span className="text-purple-400 font-bold">{candidates.length} classes</span>
+                  </div>
+                  <strong className="text-xs text-white block">Disease Distribution</strong>
+                  <p className="text-[11px] text-slate-400 mt-1 leading-snug">
+                    Evaluates class support and computes rough membership degree μ(q) = |[q]_T ∩ X_d| / |[q]_T|.
+                  </p>
+                </div>
+                <div className="text-[10px] text-purple-400 font-mono">
+                  Bounded in [0, 1]
+                </div>
+              </div>
+
+              {/* Step 5 */}
+              <div className="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between gap-2">
+                <div>
+                  <div className="flex items-center justify-between text-[10px] text-slate-500 font-mono mb-1">
+                    <span>STEP 5</span>
+                    <span className="text-emerald-400 font-bold">{primary?.confidence_percentage}%</span>
+                  </div>
+                  <strong className="text-xs text-white block">RST Recommendation</strong>
+                  <p className="text-[11px] text-slate-400 mt-1 leading-snug">
+                    Derives Lower Approximation $B_*(X)$ (certain) or Boundary Region $BN_B(X)$ with active disambiguation guidance.
+                  </p>
+                </div>
+                <div className="text-[10px] text-emerald-400 font-mono">
+                  {primary?.approximation_code} Approximation
+                </div>
+              </div>
+            </div>
+
+            {/* Critical Theoretical Distinction Note */}
+            <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-xs text-slate-300 flex items-start gap-3">
+              <ShieldCheck className="w-5 h-5 text-brand-400 shrink-0 mt-0.5" />
+              <div className="leading-relaxed">
+                <strong className="text-white block mb-0.5">
+                  Critical Mathematical Distinction (Faculty & Audit Reference):
+                </strong>
+                The relation evaluating incomplete query $q$ is formally a <strong>compatibility / tolerance relation</strong> ($T(q, x)$), which is reflexive and symmetric but <em>not transitive</em> across partial symptom observations. It generates a <strong>tolerance neighborhood $[q]_T$</strong>, which may overlap across multiple disease classes.
+                This is strictly distinguished from the <strong>classical Pawlak indiscernibility relation $IND(C)$</strong>, which is an equivalence relation that partitions the complete training universe ($N = 4,920$) into 304 mutually disjoint equivalence classes.
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
 
       {/* Suggested Disambiguating Symptoms (When Boundary Uncertainty Exists) */}
       {reasoning.boundary_uncertainty && reasoning.suggested_disambiguation_symptoms.length > 0 && (
@@ -319,13 +499,13 @@ export const RecommendationView: React.FC<RecommendationViewProps> = ({
           <div className="flex items-center gap-2">
             <FileText className="w-4 h-4 text-brand-400" />
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-300">
-              Ranked Candidate Diseases ({candidates.length} in Tolerance Class)
+              Ranked Candidate Diseases ({candidates.length} in Tolerance Neighborhood)
             </h4>
           </div>
           {onExploreComparison && (
             <button
               onClick={onExploreComparison}
-              className="text-xs text-brand-400 hover:text-brand-300 flex items-center gap-1 font-semibold"
+              className="text-xs text-brand-400 hover:text-brand-300 flex items-center gap-1 font-semibold cursor-pointer"
             >
               Compare with ML Baselines →
             </button>

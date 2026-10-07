@@ -1,6 +1,7 @@
-import React from "react";
-import { GitCompare, Layers, Cpu, Clock, ShieldCheck } from "lucide-react";
-import type { CompareResponse } from "../types";
+import React, { useState, useEffect } from "react";
+import { GitCompare, Layers, Cpu, ShieldCheck, BarChart2 } from "lucide-react";
+import type { CompareResponse, BenchmarksData } from "../types";
+import { fetchBenchmarks } from "../api/client";
 
 interface ComparisonLabProps {
   comparisonData: CompareResponse | null;
@@ -17,36 +18,23 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
   knownCount,
   unknownCount,
 }) => {
-  if (!comparisonData && !isLoading) {
-    return (
-      <div className="glass-panel rounded-2xl p-8 border border-slate-800 text-center flex flex-col items-center justify-center gap-4">
-        <GitCompare className="w-12 h-12 text-brand-400" />
-        <div>
-          <h3 className="text-base font-bold text-white">Comparative Evaluation Laboratory</h3>
-          <p className="text-xs text-slate-400 max-w-lg mt-1">
-            Compare Pawlak Rough Set Theory with 4 classical Machine Learning algorithms (Random Forest, Multinomial Naive Bayes, Logistic Regression, and Decision Tree) on the current symptom query ({knownCount} known, {unknownCount} unknown).
-          </p>
-        </div>
-        <button
-          onClick={onRunComparison}
-          className="px-6 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-600 text-white text-xs font-bold uppercase tracking-wider hover:from-brand-500 hover:to-indigo-500 transition-all shadow-lg shadow-brand-500/20 cursor-pointer"
-        >
-          Execute Multi-Model Comparison
-        </button>
-      </div>
-    );
-  }
+  const [benchmarksData, setBenchmarksData] = useState<BenchmarksData | null>(null);
+  const [selectedMissingRate, setSelectedMissingRate] = useState<number>(0.0);
 
-  if (isLoading) {
-    return (
-      <div className="glass-panel rounded-2xl p-8 border border-slate-800 text-center flex flex-col items-center justify-center gap-3">
-        <div className="w-10 h-10 border-3 border-brand-500/30 border-t-brand-500 rounded-full animate-spin" />
-        <p className="text-sm font-medium text-slate-300">
-          Running Multi-Model Inference Across RST & ML Baselines...
-        </p>
-      </div>
-    );
-  }
+  useEffect(() => {
+    async function loadBenchmarks() {
+      try {
+        const data = await fetchBenchmarks();
+        setBenchmarksData(data);
+      } catch (err) {
+        console.error("Failed to load benchmarks:", err);
+      }
+    }
+    loadBenchmarks();
+  }, []);
+
+  const summaryRows = benchmarksData?.comparison_summary || [];
+  const selectedRow = summaryRows.find((r) => r.missing_rate === selectedMissingRate) || summaryRows[0];
 
   const rst = comparisonData?.rst_prediction;
   const mls = comparisonData?.ml_predictions || {};
@@ -58,265 +46,384 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
         <div>
           <span className="text-[11px] font-semibold text-brand-400 uppercase tracking-wider flex items-center gap-1.5">
             <GitCompare className="w-3.5 h-3.5" />
-            Empirical Comparison Under Incomplete Symptoms
+            Empirical Comparison Laboratory
           </span>
           <h2 className="text-xl font-bold text-white mt-0.5">
-            Rough Set Theory vs Supervised Machine Learning Baselines
+            Rough Set Theory vs Classical Machine Learning Baselines
           </h2>
-          <p className="text-xs text-slate-400 mt-1">
-            Current query has <strong className="text-white">{knownCount}</strong> known symptoms and{" "}
-            <strong className="text-amber-400">{unknownCount}</strong> unknown symptoms (?).
+          <p className="text-xs text-slate-400 mt-1 max-w-2xl">
+            Demonstrating mathematical resilience against incomplete symptom information. Classical models impute missing attributes ($? = 0$), whereas Rough Set Theory formulates a tolerance neighborhood without zero-assumptions.
           </p>
         </div>
 
-        <button
-          onClick={onRunComparison}
-          className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700 transition-colors shrink-0 flex items-center gap-1.5 self-start sm:self-auto cursor-pointer"
-        >
-          <Clock className="w-3.5 h-3.5 text-brand-400" />
-          <span>Re-evaluate Models ({comparisonData?.total_latency_ms} ms)</span>
-        </button>
+        <div className="flex items-center gap-3 shrink-0">
+          <button
+            onClick={onRunComparison}
+            disabled={isLoading}
+            className="px-4 py-2 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-500/20 disabled:opacity-50 cursor-pointer"
+          >
+            {isLoading ? "Running Models..." : "Evaluate Current Symptoms"}
+          </button>
+        </div>
       </div>
 
-      {/* Side-by-side Model Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {/* Card 1: Rough Set Theory (Primary) */}
-        {rst && (
-          <div className="glass-panel rounded-2xl p-5 border-2 border-brand-500/50 bg-gradient-to-b from-brand-950/20 to-slate-900/60 shadow-xl flex flex-col justify-between gap-4 relative overflow-hidden">
-            <div className="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-brand-500/20 border border-brand-500/30 text-[10px] font-mono text-brand-300">
-              PRIMARY ENGINE
-            </div>
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <Layers className="w-5 h-5 text-brand-400" />
-                <h3 className="text-sm font-bold text-white">Rough Set Theory</h3>
-              </div>
-              <p className="text-[11px] text-slate-400 mb-3">
-                Pawlak tolerance relation over complete reference profiles.
-              </p>
-
-              <div className="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
-                <span className="text-[10px] text-slate-500 uppercase tracking-wider block">
-                  Top Recommended Disease
-                </span>
-                <span className="text-lg font-bold text-brand-400 block truncate">
-                  {rst.primary_disease}
-                </span>
-                <div className="flex items-center justify-between text-xs font-mono mt-1">
-                  <span className="text-slate-400">Rough Membership μ:</span>
-                  <span className="text-white font-bold">{(rst.confidence * 100).toFixed(1)}%</span>
-                </div>
-              </div>
-
-              <div className="mt-3 text-[11px] space-y-1.5 text-slate-300">
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-500">Pawlak Status:</span>
-                  <span className="font-mono text-emerald-400 font-semibold">{rst.approximation_status}</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-500">Tolerance Class [q]_T:</span>
-                  <span className="font-mono text-white">{rst.tolerance_class_size} objects</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-slate-500">Latency:</span>
-                  <span className="font-mono text-slate-400">{rst.latency_ms} ms</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-2.5 rounded-xl bg-emerald-950/30 border border-emerald-800/40 text-[11px] text-emerald-300">
-              <strong className="block text-[10px] uppercase font-bold text-emerald-400 mb-0.5">
-                Incomplete Data Semantics:
-              </strong>
-              {rst.handling_of_unknowns}
-            </div>
+      {/* SECTION 1: Interactive Benchmark Switcher Across Missing Rates */}
+      <div className="glass-panel rounded-2xl p-5 border border-slate-800 flex flex-col gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-800">
+          <div className="flex items-center gap-2">
+            <BarChart2 className="w-4 h-4 text-brand-400" />
+            <h3 className="text-sm font-bold text-white">
+              Verified Benchmark Accuracies Across Missing Symptom Rates
+            </h3>
           </div>
-        )}
 
-        {/* Card 2: Random Forest */}
-        {mls["RandomForest"] && (
-          <div className="glass-panel rounded-2xl p-5 border border-slate-800 flex flex-col justify-between gap-4">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <Cpu className="w-5 h-5 text-indigo-400" />
-                <h3 className="text-sm font-bold text-white">Random Forest (100 Trees)</h3>
-              </div>
-              <p className="text-[11px] text-slate-400 mb-3">
-                Ensemble bagging of 100 randomized decision trees.
-              </p>
-
-              <div className="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
-                <span className="text-[10px] text-slate-500 uppercase tracking-wider block">
-                  Predicted Disease
-                </span>
-                <span className="text-lg font-bold text-white block truncate">
-                  {mls["RandomForest"].predicted_disease}
-                </span>
-                <div className="flex items-center justify-between text-xs font-mono mt-1">
-                  <span className="text-slate-400">Class Probability:</span>
-                  <span className="text-indigo-400 font-bold">
-                    {(mls["RandomForest"].confidence * 100).toFixed(1)}%
-                  </span>
-                </div>
-              </div>
-
-              {mls["RandomForest"].top_candidates.length > 1 && (
-                <div className="mt-3 text-[11px] space-y-1">
-                  <span className="text-[10px] text-slate-500 uppercase block font-semibold">Other Candidates:</span>
-                  {mls["RandomForest"].top_candidates.slice(1, 3).map((c, i) => (
-                    <div key={i} className="flex justify-between text-slate-300">
-                      <span className="truncate max-w-[140px]">{c.disease}:</span>
-                      <span className="font-mono text-slate-400">{(c.probability * 100).toFixed(1)}%</span>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
-              <strong className="block text-[10px] uppercase font-bold text-slate-500 mb-0.5">
-                Incomplete Handling:
-              </strong>
-              {mls["RandomForest"].handling_of_unknowns}
-            </div>
+          {/* Missing Rate Selector Pills */}
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <span className="text-xs text-slate-400 font-semibold mr-1">Switch Rate:</span>
+            {[
+              { rate: 0.0, label: "Complete (0%)" },
+              { rate: 0.1, label: "10% Missing" },
+              { rate: 0.3, label: "30% Missing" },
+              { rate: 0.5, label: "50% Missing" },
+              { rate: 0.7, label: "70% Missing" },
+            ].map(({ rate, label }) => (
+              <button
+                key={rate}
+                onClick={() => setSelectedMissingRate(rate)}
+                className={`px-3 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                  selectedMissingRate === rate
+                    ? "bg-brand-500 text-white shadow-md shadow-brand-500/20"
+                    : "bg-slate-900 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-800"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
           </div>
-        )}
+        </div>
 
-        {/* Card 3: Bernoulli Naive Bayes */}
-        {(mls["BernoulliNB"] || mls["MultinomialNB"]) && (() => {
-          const nb = mls["BernoulliNB"] || mls["MultinomialNB"];
-          return (
-            <div className="glass-panel rounded-2xl p-5 border border-slate-800 flex flex-col justify-between gap-4">
+        {/* 5-Model Benchmark Cards for the Selected Missing Rate */}
+        {selectedRow && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+            {/* Model 1: Rough Set Top-1 */}
+            <div className="p-4 rounded-xl bg-slate-900/90 border border-brand-500/40 flex flex-col justify-between gap-2 shadow-sm">
               <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <Cpu className="w-5 h-5 text-cyan-400" />
-                  <h3 className="text-sm font-bold text-white">Bernoulli Naive Bayes</h3>
-                </div>
-                <p className="text-[11px] text-slate-400 mb-3">
-                  Binary multivariate Bernoulli estimator (preferred for 0/1 symptoms).
-                </p>
-
-                <div className="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
-                  <span className="text-[10px] text-slate-500 uppercase tracking-wider block">
-                    Predicted Disease
-                  </span>
-                  <span className="text-lg font-bold text-white block truncate">
-                    {nb.predicted_disease}
-                  </span>
-                  <div className="flex items-center justify-between text-xs font-mono mt-1">
-                    <span className="text-slate-400">Class Probability:</span>
-                    <span className="text-cyan-400 font-bold">
-                      {(nb.confidence * 100).toFixed(1)}%
-                    </span>
-                  </div>
-                </div>
-
-                {nb.top_candidates.length > 1 && (
-                  <div className="mt-3 text-[11px] space-y-1">
-                    <span className="text-[10px] text-slate-500 uppercase block font-semibold">Other Candidates:</span>
-                    {nb.top_candidates.slice(1, 3).map((c, i) => (
-                      <div key={i} className="flex justify-between text-slate-300">
-                        <span className="truncate max-w-[140px]">{c.disease}:</span>
-                        <span className="font-mono text-slate-400">{(c.probability * 100).toFixed(1)}%</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
-                <strong className="block text-[10px] uppercase font-bold text-slate-500 mb-0.5">
-                  Incomplete Handling:
-                </strong>
-                {nb.handling_of_unknowns}
-              </div>
-            </div>
-          );
-        })()}
-
-        {/* Card 4: Logistic Regression */}
-        {mls["LogisticRegression"] && (
-          <div className="glass-panel rounded-2xl p-5 border border-slate-800 flex flex-col justify-between gap-4">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <Cpu className="w-5 h-5 text-purple-400" />
-                <h3 className="text-sm font-bold text-white">Logistic Regression</h3>
-              </div>
-              <p className="text-[11px] text-slate-400 mb-3">
-                L2-regularized multinomial linear logit model.
-              </p>
-
-              <div className="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
-                <span className="text-[10px] text-slate-500 uppercase tracking-wider block">
-                  Predicted Disease
+                <span className="text-[10px] text-brand-400 uppercase font-bold tracking-wider block">
+                  Primary Model
                 </span>
-                <span className="text-lg font-bold text-white block truncate">
-                  {mls["LogisticRegression"].predicted_disease}
-                </span>
-                <div className="flex items-center justify-between text-xs font-mono mt-1">
-                  <span className="text-slate-400">Confidence:</span>
-                  <span className="text-purple-400 font-bold">
-                    {(mls["LogisticRegression"].confidence * 100).toFixed(1)}%
-                  </span>
+                <strong className="text-sm text-white block mt-0.5">Rough Set Theory</strong>
+                <span className="text-[11px] text-slate-400 block">Tolerance Neighborhood [q]_T</span>
+              </div>
+              <div className="pt-2 border-t border-slate-800/80">
+                <div className="text-2xl font-black text-brand-400 font-mono">
+                  {(selectedRow.RST_accuracy * 100).toFixed(2)}%
+                </div>
+                <div className="text-[10px] text-slate-400 font-mono mt-0.5">
+                  Top-3: <strong className="text-cyan-400">{(selectedRow.RST_top3_accuracy * 100).toFixed(2)}%</strong>
                 </div>
               </div>
             </div>
 
-            <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
-              <strong className="block text-[10px] uppercase font-bold text-slate-500 mb-0.5">
-                Incomplete Handling:
-              </strong>
-              {mls["LogisticRegression"].handling_of_unknowns}
+            {/* Model 2: Bernoulli Naive Bayes */}
+            <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between gap-2">
+              <div>
+                <span className="text-[10px] text-cyan-400 uppercase font-bold tracking-wider block">
+                  ML Baseline 1
+                </span>
+                <strong className="text-sm text-white block mt-0.5">Bernoulli Naive Bayes</strong>
+                <span className="text-[11px] text-slate-400 block">Binary Likelihood ($? = 0$)</span>
+              </div>
+              <div className="pt-2 border-t border-slate-800/80">
+                <div className="text-2xl font-black text-slate-200 font-mono">
+                  {(((selectedRow.BernoulliNB_accuracy ?? selectedRow.MultinomialNB_accuracy ?? 0) * 100)).toFixed(2)}%
+                </div>
+                <div className="text-[10px] text-slate-400 font-mono mt-0.5">
+                  Degradation: {(((selectedRow.BernoulliNB_accuracy ?? selectedRow.MultinomialNB_accuracy ?? 1) - 1) * 100).toFixed(1)}%
+                </div>
+              </div>
+            </div>
+
+            {/* Model 3: Logistic Regression */}
+            <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between gap-2">
+              <div>
+                <span className="text-[10px] text-purple-400 uppercase font-bold tracking-wider block">
+                  ML Baseline 2
+                </span>
+                <strong className="text-sm text-white block mt-0.5">Logistic Regression</strong>
+                <span className="text-[11px] text-slate-400 block">L2 Multinomial ($? = 0$)</span>
+              </div>
+              <div className="pt-2 border-t border-slate-800/80">
+                <div className="text-2xl font-black text-slate-200 font-mono">
+                  {(selectedRow.LogisticRegression_accuracy * 100).toFixed(2)}%
+                </div>
+                <div className="text-[10px] text-slate-400 font-mono mt-0.5">
+                  Degradation: {((selectedRow.LogisticRegression_accuracy - 1.0) * 100).toFixed(1)}%
+                </div>
+              </div>
+            </div>
+
+            {/* Model 4: Random Forest */}
+            <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex flex-col justify-between gap-2">
+              <div>
+                <span className="text-[10px] text-indigo-400 uppercase font-bold tracking-wider block">
+                  ML Baseline 3
+                </span>
+                <strong className="text-sm text-white block mt-0.5">Random Forest</strong>
+                <span className="text-[11px] text-slate-400 block">100 Trees ($? = 0$)</span>
+              </div>
+              <div className="pt-2 border-t border-slate-800/80">
+                <div className="text-2xl font-black text-slate-200 font-mono">
+                  {(selectedRow.RandomForest_accuracy * 100).toFixed(2)}%
+                </div>
+                <div className="text-[10px] text-slate-400 font-mono mt-0.5">
+                  Degradation: {((selectedRow.RandomForest_accuracy - 0.9762) * 100).toFixed(1)}%
+                </div>
+              </div>
+            </div>
+
+            {/* Model 5: CART Decision Tree */}
+            <div className="p-4 rounded-xl bg-slate-900/60 border border-rose-900/40 flex flex-col justify-between gap-2">
+              <div>
+                <span className="text-[10px] text-rose-400 uppercase font-bold tracking-wider block">
+                  ML Baseline 4
+                </span>
+                <strong className="text-sm text-white block mt-0.5">CART Decision Tree</strong>
+                <span className="text-[11px] text-slate-400 block">Gini Splits ($? = 0$)</span>
+              </div>
+              <div className="pt-2 border-t border-slate-800/80">
+                <div className="text-2xl font-black text-rose-400 font-mono">
+                  {(selectedRow.DecisionTree_accuracy * 100).toFixed(2)}%
+                </div>
+                <div className="text-[10px] text-rose-400/80 font-mono mt-0.5">
+                  Degradation: {((selectedRow.DecisionTree_accuracy - 0.9762) * 100).toFixed(1)}%
+                </div>
+              </div>
             </div>
           </div>
         )}
 
-        {/* Card 5: Decision Tree CART */}
-        {mls["DecisionTree"] && (
-          <div className="glass-panel rounded-2xl p-5 border border-slate-800 flex flex-col justify-between gap-4">
-            <div>
-              <div className="flex items-center gap-2 mb-2">
-                <Cpu className="w-5 h-5 text-amber-400" />
-                <h3 className="text-sm font-bold text-white">Decision Tree (CART)</h3>
-              </div>
-              <p className="text-[11px] text-slate-400 mb-3">
-                Recursive axis-aligned partitioning tree.
-              </p>
-
-              <div className="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
-                <span className="text-[10px] text-slate-500 uppercase tracking-wider block">
-                  Predicted Disease
-                </span>
-                <span className="text-lg font-bold text-white block truncate">
-                  {mls["DecisionTree"].predicted_disease}
-                </span>
-                <div className="flex items-center justify-between text-xs font-mono mt-1">
-                  <span className="text-slate-400">Leaf Purity:</span>
-                  <span className="text-amber-400 font-bold">
-                    {(mls["DecisionTree"].confidence * 100).toFixed(1)}%
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
-              <strong className="block text-[10px] uppercase font-bold text-slate-500 mb-0.5">
-                Incomplete Handling:
-              </strong>
-              {mls["DecisionTree"].handling_of_unknowns}
-            </div>
-          </div>
-        )}
+        <div className="text-[11px] text-slate-400 pt-2 flex items-center justify-between">
+          <span>
+            *Evaluated on 42 held-out cases with 5 repeated masking evaluations per incomplete level.
+          </span>
+          <span className="font-mono text-slate-500">
+            Source: backend/artifacts/benchmarks.json
+          </span>
+        </div>
       </div>
+
+      {/* SECTION 2: Live Query Comparison Cards (When Query Executed) */}
+      {comparisonData && (
+        <div className="flex flex-col gap-4">
+          <div className="flex items-center justify-between">
+            <h3 className="text-sm font-bold text-white flex items-center gap-2">
+              <Cpu className="w-4 h-4 text-brand-400" />
+              Live Predictions on Active Symptom Query ({knownCount} Known, {unknownCount} Unknown)
+            </h3>
+            <span className="text-xs font-mono text-slate-400">
+              Total Latency: {comparisonData.total_latency_ms} ms
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+            {/* Card 1: Rough Set Recommender */}
+            {rst && (
+              <div className="glass-panel rounded-2xl p-5 border border-brand-500/40 flex flex-col justify-between gap-4 shadow-xl">
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Layers className="w-5 h-5 text-brand-400" />
+                    <h4 className="text-sm font-bold text-white">Rough Set Recommender</h4>
+                  </div>
+                  <p className="text-[11px] text-slate-400 mb-3">
+                    Tolerance neighborhood $[q]_T$ derived without zero-imputation.
+                  </p>
+
+                  <div className="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
+                    <span className="text-[10px] text-slate-500 uppercase tracking-wider block">
+                      Recommended Disease
+                    </span>
+                    <span className="text-base font-bold text-brand-300 block truncate mt-0.5">
+                      {rst.primary_disease}
+                    </span>
+                    <div className="flex items-center justify-between text-xs font-mono mt-1">
+                      <span className="text-slate-400">Rough Membership:</span>
+                      <span className="text-brand-400 font-bold">{rst.confidence}%</span>
+                    </div>
+                  </div>
+
+                  <div className="mt-3 text-[11px] text-slate-400 font-mono">
+                    Tolerance Support: <strong className="text-white">{rst.tolerance_class_size}</strong> objects
+                  </div>
+                </div>
+
+                <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
+                  <strong className="block text-[10px] uppercase font-bold text-slate-500 mb-0.5">
+                    Approximation Status:
+                  </strong>
+                  <span className="text-brand-300">{rst.approximation_status}</span>
+                </div>
+              </div>
+            )}
+
+            {/* Card 2: Bernoulli Naive Bayes */}
+            {mls["BernoulliNB"] && (
+              <div className="glass-panel rounded-2xl p-5 border border-slate-800 flex flex-col justify-between gap-4">
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Cpu className="w-5 h-5 text-cyan-400" />
+                    <h4 className="text-sm font-bold text-white">Bernoulli Naive Bayes</h4>
+                  </div>
+                  <p className="text-[11px] text-slate-400 mb-3">
+                    Binary multivariate Bernoulli ($? \to 0$, assumed absent).
+                  </p>
+
+                  <div className="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
+                    <span className="text-[10px] text-slate-500 uppercase tracking-wider block">
+                      Predicted Disease
+                    </span>
+                    <span className="text-base font-bold text-white block truncate mt-0.5">
+                      {mls["BernoulliNB"].predicted_disease}
+                    </span>
+                    <div className="flex items-center justify-between text-xs font-mono mt-1">
+                      <span className="text-slate-400">Posterior Prob:</span>
+                      <span className="text-cyan-400 font-bold">
+                        {(mls["BernoulliNB"].confidence * 100).toFixed(1)}%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
+                  <strong className="block text-[10px] uppercase font-bold text-slate-500 mb-0.5">
+                    Incomplete Handling:
+                  </strong>
+                  {mls["BernoulliNB"].handling_of_unknowns}
+                </div>
+              </div>
+            )}
+
+            {/* Card 3: Logistic Regression */}
+            {mls["LogisticRegression"] && (
+              <div className="glass-panel rounded-2xl p-5 border border-slate-800 flex flex-col justify-between gap-4">
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Cpu className="w-5 h-5 text-purple-400" />
+                    <h4 className="text-sm font-bold text-white">Logistic Regression</h4>
+                  </div>
+                  <p className="text-[11px] text-slate-400 mb-3">
+                    L2 multinomial logit ($? \to 0$, assumed absent).
+                  </p>
+
+                  <div className="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
+                    <span className="text-[10px] text-slate-500 uppercase tracking-wider block">
+                      Predicted Disease
+                    </span>
+                    <span className="text-base font-bold text-white block truncate mt-0.5">
+                      {mls["LogisticRegression"].predicted_disease}
+                    </span>
+                    <div className="flex items-center justify-between text-xs font-mono mt-1">
+                      <span className="text-slate-400">Softmax Prob:</span>
+                      <span className="text-purple-400 font-bold">
+                        {(mls["LogisticRegression"].confidence * 100).toFixed(1)}%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
+                  <strong className="block text-[10px] uppercase font-bold text-slate-500 mb-0.5">
+                    Incomplete Handling:
+                  </strong>
+                  {mls["LogisticRegression"].handling_of_unknowns}
+                </div>
+              </div>
+            )}
+
+            {/* Card 4: Random Forest */}
+            {mls["RandomForest"] && (
+              <div className="glass-panel rounded-2xl p-5 border border-slate-800 flex flex-col justify-between gap-4">
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Cpu className="w-5 h-5 text-indigo-400" />
+                    <h4 className="text-sm font-bold text-white">Random Forest</h4>
+                  </div>
+                  <p className="text-[11px] text-slate-400 mb-3">
+                    100 Decision Trees ($? \to 0$, assumed absent).
+                  </p>
+
+                  <div className="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
+                    <span className="text-[10px] text-slate-500 uppercase tracking-wider block">
+                      Predicted Disease
+                    </span>
+                    <span className="text-base font-bold text-white block truncate mt-0.5">
+                      {mls["RandomForest"].predicted_disease}
+                    </span>
+                    <div className="flex items-center justify-between text-xs font-mono mt-1">
+                      <span className="text-slate-400">Ensemble Vote:</span>
+                      <span className="text-indigo-400 font-bold">
+                        {(mls["RandomForest"].confidence * 100).toFixed(1)}%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
+                  <strong className="block text-[10px] uppercase font-bold text-slate-500 mb-0.5">
+                    Incomplete Handling:
+                  </strong>
+                  {mls["RandomForest"].handling_of_unknowns}
+                </div>
+              </div>
+            )}
+
+            {/* Card 5: CART Decision Tree */}
+            {mls["DecisionTree"] && (
+              <div className="glass-panel rounded-2xl p-5 border border-slate-800 flex flex-col justify-between gap-4">
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Cpu className="w-5 h-5 text-rose-400" />
+                    <h4 className="text-sm font-bold text-white">CART Decision Tree</h4>
+                  </div>
+                  <p className="text-[11px] text-slate-400 mb-3">
+                    Greedy Gini Splits ($? \to 0$, assumed absent).
+                  </p>
+
+                  <div className="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
+                    <span className="text-[10px] text-slate-500 uppercase tracking-wider block">
+                      Predicted Disease
+                    </span>
+                    <span className="text-base font-bold text-white block truncate mt-0.5">
+                      {mls["DecisionTree"].predicted_disease}
+                    </span>
+                    <div className="flex items-center justify-between text-xs font-mono mt-1">
+                      <span className="text-slate-400">Leaf Purity:</span>
+                      <span className="text-rose-400 font-bold">
+                        {(mls["DecisionTree"].confidence * 100).toFixed(1)}%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
+                  <strong className="block text-[10px] uppercase font-bold text-slate-500 mb-0.5">
+                    Incomplete Handling:
+                  </strong>
+                  {mls["DecisionTree"].handling_of_unknowns}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Critical Academic Discussion Note */}
       <div className="glass-panel rounded-2xl p-5 border border-slate-800 bg-slate-900/40 text-xs text-slate-300 flex flex-col gap-2">
         <h4 className="font-bold text-white flex items-center gap-2">
           <ShieldCheck className="w-4 h-4 text-brand-400" />
-          Why Rough Set Theory Excels on Incomplete Medical Information
+          Methodological Principle: Unknown Symptom ≠ Absent Symptom
         </h4>
         <p className="text-slate-400 leading-relaxed">
-          Standard statistical classifiers assume complete feature vectors and traditionally impute missing attributes with 0 (assuming the symptom is absent). If a patient actually has a symptom but did not mention it, treating it as 0 causes catastrophic path deviations in decision trees (dropping CART accuracy to 36.67% at 70% missing). In contrast, <strong>Rough Set Theory's tolerance relation [q]_T ignores unspecified attributes</strong>, searching for all compatible medical profiles and deriving deterministic Lower and Boundary approximations.
+          Standard statistical classifiers assume complete feature vectors and traditionally impute missing attributes with 0 (assuming the symptom is absent). If a patient actually has a symptom but did not report it, forcing $? \to 0$ causes severe path deviations in greedy tree splits (dropping CART accuracy from 97.62% down to 36.67% at 70% missing). In contrast, <strong>Rough Set Theory's tolerance relation $T(q, x)$ strictly ignores unspecified attributes</strong>, searching for all compatible training profiles and preserving epistemic uncertainty within lower and boundary approximations.
         </p>
       </div>
     </div>
