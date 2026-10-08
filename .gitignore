@@ -1,4 +1,8 @@
-# Python
+# ==============================================================================
+# Git Ignore Configuration for Clinical Diagnostic Support System (MINI PRO)
+# ==============================================================================
+
+# 1. Python & Bytecode
 __pycache__/
 *.py[cod]
 *$py.class
@@ -6,34 +10,80 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
+.mypy_cache/
+.ruff_cache/
 dist/
 build/
 *.egg-info/
-.venv/
-env/
-venv/
-ENV/
 
-# Node & Frontend
+# 2. Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 3. Node & Frontend Build Outputs
 node_modules/
+frontend/node_modules/
 frontend/dist/
 frontend/.vite/
 frontend/build/
+*.tsbuildinfo
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# Environment & OS
+# 4. Environment Variables & Secrets
 .env
-.env.local
+.env.*
+!.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+*.pem
+*.key
+*.cert
+*.crt
+secrets.*
+*.pfx
+*.p12
+
+# 5. Local IDE & OS Artifacts
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
 Thumbs.db
-*.swp
+desktop.ini
+$RECYCLE.BIN/
 
-# Artifact caches / Temp
+# 6. Logs & Temporary Files
+*.log
+logs/
 *.tmp
+temp/
+tmp/
 backend/artifacts/*.tmp
 
-# Kaggle CSV Data (Preserve local copies, do not publish raw CSVs automatically)
+# 7. Raw Clinical Datasets (Protected Dataset Governance Policy)
 data/*.csv
+data/Training.csv
+data/Testing.csv
 !data/.gitkeep
+!data/README.md
+
+# 8. Temporary Audit Screenshots & Transient Binary/JSON Outputs
+audit/screenshots/
+audit/screenshots_final/
+audit/*.png
+audit/*.zip
+audit/final_signoff_verification.json
+audit/final_verification_results.json
+audit/full_coverage_report.json
+audit/verification_results.json

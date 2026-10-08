@@ -9,7 +9,14 @@ import type {
   AssociationRule,
 } from "../types";
 
-const API_BASE = "/api";
+// Configurable API base for production deployment.
+// If VITE_API_BASE_URL is defined (e.g. "https://api.yourdomain.com"), it uses it.
+// If empty or omitted, defaults to "/api" (which works seamlessly with Vite dev proxy and reverse proxy).
+const rawEnvUrl = (import.meta.env.VITE_API_BASE_URL as string | undefined)?.trim();
+const normalizedBase = rawEnvUrl ? rawEnvUrl.replace(/\/+$/, "") : "";
+const API_BASE = normalizedBase
+  ? (normalizedBase.endsWith("/api") ? normalizedBase : `${normalizedBase}/api`)
+  : "/api";
 
 export async function fetchSymptoms(category?: string): Promise<{ total_symptoms: number; categories: string[]; symptoms: Symptom[] }> {
   const url = category ? `${API_BASE}/symptoms?category=${encodeURIComponent(category)}` : `${API_BASE}/symptoms`;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { GitCompare, Layers, Cpu, ShieldCheck, BarChart2 } from "lucide-react";
+import { GitCompare, Layers, Cpu, ShieldCheck, BarChart2, Info } from "lucide-react";
 import type { CompareResponse, BenchmarksData } from "../types";
 import { fetchBenchmarks } from "../api/client";
 
@@ -40,7 +40,7 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
   const mls = comparisonData?.ml_predictions || {};
 
   return (
-    <div className="flex flex-col gap-6 animate-fadeIn">
+    <div className="flex flex-col gap-5 animate-fadeIn">
       {/* Header Banner */}
       <div className="glass-panel rounded-2xl p-5 border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
@@ -51,8 +51,8 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
           <h2 className="text-xl font-bold text-white mt-0.5">
             Rough Set Theory vs Classical Machine Learning Baselines
           </h2>
-          <p className="text-xs text-slate-400 mt-1 max-w-2xl">
-            Demonstrating mathematical resilience against incomplete symptom information. Classical models impute missing attributes ($? = 0$), whereas Rough Set Theory formulates a tolerance neighborhood without zero-assumptions.
+          <p className="text-xs text-slate-300 mt-1 max-w-2xl">
+            Comparing robustness under incomplete symptom information.
           </p>
         </div>
 
@@ -60,11 +60,17 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
           <button
             onClick={onRunComparison}
             disabled={isLoading}
-            className="px-4 py-2 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-500/20 disabled:opacity-50 cursor-pointer"
+            className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-indigo-600 hover:from-brand-500 hover:to-indigo-500 text-white text-xs font-bold transition-all shadow-md shadow-brand-500/20 disabled:opacity-50 cursor-pointer"
           >
             {isLoading ? "Running Models..." : "Evaluate Current Symptoms"}
           </button>
         </div>
+      </div>
+
+      {/* Methodology Note */}
+      <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-xs text-slate-300 flex items-center gap-2.5">
+        <Info className="w-4 h-4 text-brand-400 shrink-0" />
+        <span>ML baseline: unknown symptoms are zero-imputed; RST does not impute unknown symptoms.</span>
       </div>
 
       {/* SECTION 1: Interactive Benchmark Switcher Across Missing Rates */}
@@ -109,10 +115,10 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
             <div className="p-4 rounded-xl bg-slate-900/90 border border-brand-500/40 flex flex-col justify-between gap-2 shadow-sm">
               <div>
                 <span className="text-[10px] text-brand-400 uppercase font-bold tracking-wider block">
-                  Primary Model
+                  Primary Research Method
                 </span>
                 <strong className="text-sm text-white block mt-0.5">Rough Set Theory</strong>
-                <span className="text-[11px] text-slate-400 block">Tolerance Neighborhood [q]_T</span>
+                <span className="text-[11px] text-slate-400 block mt-1">Tolerance neighborhood over known attributes</span>
               </div>
               <div className="pt-2 border-t border-slate-800/80">
                 <div className="text-2xl font-black text-brand-400 font-mono">
@@ -131,7 +137,7 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
                   ML Baseline 1
                 </span>
                 <strong className="text-sm text-white block mt-0.5">Bernoulli Naive Bayes</strong>
-                <span className="text-[11px] text-slate-400 block">Binary Likelihood ($? = 0$)</span>
+                <span className="text-[11px] text-slate-400 block mt-1">Binary multivariate likelihood</span>
               </div>
               <div className="pt-2 border-t border-slate-800/80">
                 <div className="text-2xl font-black text-slate-200 font-mono">
@@ -150,7 +156,7 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
                   ML Baseline 2
                 </span>
                 <strong className="text-sm text-white block mt-0.5">Logistic Regression</strong>
-                <span className="text-[11px] text-slate-400 block">L2 Multinomial ($? = 0$)</span>
+                <span className="text-[11px] text-slate-400 block mt-1">Multinomial logistic regression</span>
               </div>
               <div className="pt-2 border-t border-slate-800/80">
                 <div className="text-2xl font-black text-slate-200 font-mono">
@@ -169,7 +175,7 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
                   ML Baseline 3
                 </span>
                 <strong className="text-sm text-white block mt-0.5">Random Forest</strong>
-                <span className="text-[11px] text-slate-400 block">100 Trees ($? = 0$)</span>
+                <span className="text-[11px] text-slate-400 block mt-1">Random forest ensemble (100 trees)</span>
               </div>
               <div className="pt-2 border-t border-slate-800/80">
                 <div className="text-2xl font-black text-slate-200 font-mono">
@@ -181,14 +187,14 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
               </div>
             </div>
 
-            {/* Model 5: CART Decision Tree */}
+            {/* Model 5: Decision Tree */}
             <div className="p-4 rounded-xl bg-slate-900/60 border border-rose-900/40 flex flex-col justify-between gap-2">
               <div>
                 <span className="text-[10px] text-rose-400 uppercase font-bold tracking-wider block">
                   ML Baseline 4
                 </span>
-                <strong className="text-sm text-white block mt-0.5">CART Decision Tree</strong>
-                <span className="text-[11px] text-slate-400 block">Gini Splits ($? = 0$)</span>
+                <strong className="text-sm text-white block mt-0.5">Decision Tree</strong>
+                <span className="text-[11px] text-slate-400 block mt-1">Decision tree classification</span>
               </div>
               <div className="pt-2 border-t border-slate-800/80">
                 <div className="text-2xl font-black text-rose-400 font-mono">
@@ -202,20 +208,16 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
           </div>
         )}
 
-        <div className="text-[11px] text-slate-400 pt-2 flex items-center justify-between">
-          <span>
-            *Evaluated on 42 held-out cases with 5 repeated masking evaluations per incomplete level.
-          </span>
-          <span className="font-mono text-slate-500">
-            Source: backend/artifacts/benchmarks.json
-          </span>
+        <div className="text-[11px] text-slate-400 pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-1 border-t border-slate-800/60">
+          <span>Evaluated on 42 held-out test samples across 5 missing symptom levels</span>
+          <span className="text-slate-300">RST preserves unknown symptoms as unknown rather than treating them as absent.</span>
         </div>
       </div>
 
-      {/* SECTION 2: Live Query Comparison Cards (When Query Executed) */}
+      {/* SECTION 2: Active User Query Real-time Multi-Model Comparison */}
       {comparisonData && (
-        <div className="flex flex-col gap-4">
-          <div className="flex items-center justify-between">
+        <div className="glass-panel rounded-2xl p-5 border border-slate-800 flex flex-col gap-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-slate-800">
             <h3 className="text-sm font-bold text-white flex items-center gap-2">
               <Cpu className="w-4 h-4 text-brand-400" />
               Live Predictions on Active Symptom Query ({knownCount} Known, {unknownCount} Unknown)
@@ -235,19 +237,19 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
                     <h4 className="text-sm font-bold text-white">Rough Set Recommender</h4>
                   </div>
                   <p className="text-[11px] text-slate-400 mb-3">
-                    Tolerance neighborhood $[q]_T$ derived without zero-imputation.
+                    Tolerance neighborhood [q]ᴛ derived without zero-imputation.
                   </p>
 
                   <div className="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
-                    <span className="text-[10px] text-slate-500 uppercase tracking-wider block">
+                    <span className="text-[10px] text-slate-400 uppercase tracking-wider block">
                       Recommended Disease
                     </span>
                     <span className="text-base font-bold text-brand-300 block truncate mt-0.5">
                       {rst.primary_disease}
                     </span>
                     <div className="flex items-center justify-between text-xs font-mono mt-1">
-                      <span className="text-slate-400">Rough Membership:</span>
-                      <span className="text-brand-400 font-bold">{rst.confidence}%</span>
+                      <span className="text-slate-400">Rough Membership Degree:</span>
+                      <span className="text-brand-400 font-bold">μ(q) = {rst.confidence.toFixed(4)}</span>
                     </div>
                   </div>
 
@@ -257,7 +259,7 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
                 </div>
 
                 <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
-                  <strong className="block text-[10px] uppercase font-bold text-slate-500 mb-0.5">
+                  <strong className="block text-[10px] uppercase font-bold text-slate-400 mb-0.5">
                     Approximation Status:
                   </strong>
                   <span className="text-brand-300">{rst.approximation_status}</span>
@@ -274,11 +276,11 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
                     <h4 className="text-sm font-bold text-white">Bernoulli Naive Bayes</h4>
                   </div>
                   <p className="text-[11px] text-slate-400 mb-3">
-                    Binary multivariate Bernoulli ($? \to 0$, assumed absent).
+                    Binary multivariate likelihood.
                   </p>
 
                   <div className="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
-                    <span className="text-[10px] text-slate-500 uppercase tracking-wider block">
+                    <span className="text-[10px] text-slate-400 uppercase tracking-wider block">
                       Predicted Disease
                     </span>
                     <span className="text-base font-bold text-white block truncate mt-0.5">
@@ -294,10 +296,10 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
                 </div>
 
                 <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
-                  <strong className="block text-[10px] uppercase font-bold text-slate-500 mb-0.5">
+                  <strong className="block text-[10px] uppercase font-bold text-slate-400 mb-0.5">
                     Incomplete Handling:
                   </strong>
-                  {mls["BernoulliNB"].handling_of_unknowns}
+                  <span className="text-slate-300">Zero-imputed</span>
                 </div>
               </div>
             )}
@@ -311,11 +313,11 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
                     <h4 className="text-sm font-bold text-white">Logistic Regression</h4>
                   </div>
                   <p className="text-[11px] text-slate-400 mb-3">
-                    L2 multinomial logit ($? \to 0$, assumed absent).
+                    Multinomial logistic regression.
                   </p>
 
                   <div className="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
-                    <span className="text-[10px] text-slate-500 uppercase tracking-wider block">
+                    <span className="text-[10px] text-slate-400 uppercase tracking-wider block">
                       Predicted Disease
                     </span>
                     <span className="text-base font-bold text-white block truncate mt-0.5">
@@ -331,10 +333,10 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
                 </div>
 
                 <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
-                  <strong className="block text-[10px] uppercase font-bold text-slate-500 mb-0.5">
+                  <strong className="block text-[10px] uppercase font-bold text-slate-400 mb-0.5">
                     Incomplete Handling:
                   </strong>
-                  {mls["LogisticRegression"].handling_of_unknowns}
+                  <span className="text-slate-300">Zero-imputed</span>
                 </div>
               </div>
             )}
@@ -348,11 +350,11 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
                     <h4 className="text-sm font-bold text-white">Random Forest</h4>
                   </div>
                   <p className="text-[11px] text-slate-400 mb-3">
-                    100 Decision Trees ($? \to 0$, assumed absent).
+                    Random forest ensemble.
                   </p>
 
                   <div className="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
-                    <span className="text-[10px] text-slate-500 uppercase tracking-wider block">
+                    <span className="text-[10px] text-slate-400 uppercase tracking-wider block">
                       Predicted Disease
                     </span>
                     <span className="text-base font-bold text-white block truncate mt-0.5">
@@ -368,28 +370,28 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
                 </div>
 
                 <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
-                  <strong className="block text-[10px] uppercase font-bold text-slate-500 mb-0.5">
+                  <strong className="block text-[10px] uppercase font-bold text-slate-400 mb-0.5">
                     Incomplete Handling:
                   </strong>
-                  {mls["RandomForest"].handling_of_unknowns}
+                  <span className="text-slate-300">Zero-imputed</span>
                 </div>
               </div>
             )}
 
-            {/* Card 5: CART Decision Tree */}
+            {/* Card 5: Decision Tree */}
             {mls["DecisionTree"] && (
               <div className="glass-panel rounded-2xl p-5 border border-slate-800 flex flex-col justify-between gap-4">
                 <div>
                   <div className="flex items-center gap-2 mb-2">
                     <Cpu className="w-5 h-5 text-rose-400" />
-                    <h4 className="text-sm font-bold text-white">CART Decision Tree</h4>
+                    <h4 className="text-sm font-bold text-white">Decision Tree</h4>
                   </div>
                   <p className="text-[11px] text-slate-400 mb-3">
-                    Greedy Gini Splits ($? \to 0$, assumed absent).
+                    Single decision tree.
                   </p>
 
                   <div className="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
-                    <span className="text-[10px] text-slate-500 uppercase tracking-wider block">
+                    <span className="text-[10px] text-slate-400 uppercase tracking-wider block">
                       Predicted Disease
                     </span>
                     <span className="text-base font-bold text-white block truncate mt-0.5">
@@ -405,10 +407,10 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
                 </div>
 
                 <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-slate-400">
-                  <strong className="block text-[10px] uppercase font-bold text-slate-500 mb-0.5">
+                  <strong className="block text-[10px] uppercase font-bold text-slate-400 mb-0.5">
                     Incomplete Handling:
                   </strong>
-                  {mls["DecisionTree"].handling_of_unknowns}
+                  <span className="text-slate-300">Zero-imputed</span>
                 </div>
               </div>
             )}
@@ -416,14 +418,14 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
         </div>
       )}
 
-      {/* Critical Academic Discussion Note */}
+      {/* Academic Discussion Note */}
       <div className="glass-panel rounded-2xl p-5 border border-slate-800 bg-slate-900/40 text-xs text-slate-300 flex flex-col gap-2">
         <h4 className="font-bold text-white flex items-center gap-2">
           <ShieldCheck className="w-4 h-4 text-brand-400" />
           Methodological Principle: Unknown Symptom ≠ Absent Symptom
         </h4>
-        <p className="text-slate-400 leading-relaxed">
-          Standard statistical classifiers assume complete feature vectors and traditionally impute missing attributes with 0 (assuming the symptom is absent). If a patient actually has a symptom but did not report it, forcing $? \to 0$ causes severe path deviations in greedy tree splits (dropping CART accuracy from 97.62% down to 36.67% at 70% missing). In contrast, <strong>Rough Set Theory's tolerance relation $T(q, x)$ strictly ignores unspecified attributes</strong>, searching for all compatible training profiles and preserving epistemic uncertainty within lower and boundary approximations.
+        <p className="text-slate-300 leading-relaxed">
+          Standard statistical classifiers assume complete feature vectors and traditionally impute missing attributes with 0 (assuming the symptom is absent). If a patient actually has a symptom but did not report it, forcing ? → 0 causes performance degradation in greedy tree splits (dropping Decision Tree accuracy from 97.62% down to 36.67% at 70% missing). In contrast, <strong>Rough Set Theory's tolerance relation T(q, x) strictly ignores unspecified attributes</strong>, searching for all compatible training profiles—RST preserves unknown symptoms as unknown rather than treating them as absent.
         </p>
       </div>
     </div>

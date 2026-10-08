@@ -14,14 +14,20 @@ app = FastAPI(
         "Association Rules, and Machine Learning for Disease Prediction from Incomplete Symptom Sets."
     ),
     version=settings.PROJECT_VERSION,
+    debug=False,
 )
 
-# CORS Middleware
+# Explicit Production CORS Middleware
+cors_origins = (
+    settings.CORS_ORIGINS
+    if isinstance(settings.CORS_ORIGINS, list)
+    else [settings.CORS_ORIGINS]
+)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.CORS_ORIGINS,
+    allow_origins=cors_origins,
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
 
@@ -54,7 +60,9 @@ def root():
     }
 
 
-@app.get(f"{settings.API_PREFIX}/health")
+# Health check endpoints (available at both root /health and /api/health)
+@app.get("/health", tags=["Health"])
+@app.get(f"{settings.API_PREFIX}/health", tags=["Health"])
 def health_check():
     artifacts_ready = (settings.ARTIFACTS_DIR / "metadata.json").exists()
     return {

@@ -31,6 +31,7 @@ export const App: React.FC = () => {
   const [queryValues, setQueryValues] = useState<Record<string, SymptomValue>>({});
   const [recommendationResult, setRecommendationResult] = useState<RecommendResponse | null>(null);
   const [comparisonResult, setComparisonResult] = useState<CompareResponse | null>(null);
+  const [isEditingSymptoms, setIsEditingSymptoms] = useState<boolean>(false);
 
   const [isLoadingRec, setIsLoadingRec] = useState<boolean>(false);
   const [isLoadingComp, setIsLoadingComp] = useState<boolean>(false);
@@ -57,12 +58,6 @@ export const App: React.FC = () => {
         });
         setQueryValues(initialQuery);
         setServerHealthy(true);
-
-        // Pre-evaluate the first clinical preset (Dengue Complete) so the user sees immediate live results!
-        if (presetData.presets.length > 0) {
-          const firstPreset = presetData.presets[0];
-          handleLoadPreset(firstPreset);
-        }
       } catch (err: any) {
         console.error("Initialization error:", err);
         setErrorMsg("Failed to connect to backend service. Please check API server.");
@@ -92,6 +87,7 @@ export const App: React.FC = () => {
     try {
       setIsLoadingRec(true);
       setErrorMsg(null);
+      setIsEditingSymptoms(false);
       const res = await predictRecommendation(nextQuery, 5);
       setRecommendationResult(res);
     } catch (err: any) {
@@ -107,6 +103,7 @@ export const App: React.FC = () => {
     try {
       setIsLoadingRec(true);
       setErrorMsg(null);
+      setIsEditingSymptoms(false);
       const res = await predictRecommendation(queryValues, 5);
       setRecommendationResult(res);
     } catch (err: any) {
@@ -115,6 +112,17 @@ export const App: React.FC = () => {
     } finally {
       setIsLoadingRec(false);
     }
+  };
+
+  // Reset all symptoms to unknown and clear active recommendation
+  const handleResetAll = () => {
+    const nextQuery: Record<string, SymptomValue> = {};
+    symptoms.forEach((s) => {
+      nextQuery[s.id] = "?";
+    });
+    setQueryValues(nextQuery);
+    setRecommendationResult(null);
+    setIsEditingSymptoms(false);
   };
 
   // Run Comparison
@@ -138,8 +146,10 @@ export const App: React.FC = () => {
     handleRunComparison();
   };
 
-  // Count known and unknown symptoms
-  const knownCount = Object.values(queryValues).filter((v) => v === 1 || v === 0).length;
+  // Count yes, no, known and unknown symptoms
+  const yesCount = Object.values(queryValues).filter((v) => v === 1).length;
+  const noCount = Object.values(queryValues).filter((v) => v === 0).length;
+  const knownCount = yesCount + noCount;
   const unknownCount = 132 - knownCount;
 
   return (
@@ -176,21 +186,47 @@ export const App: React.FC = () => {
         {/* Tab 1: Interactive Disease Recommender */}
         {activeTab === "recommender" && (
           <div className="flex flex-col gap-6">
-            <SymptomInputConsole
-              symptoms={symptoms}
-              queryValues={queryValues}
-              setQueryValues={setQueryValues}
-              presets={presets}
-              onLoadPreset={handleLoadPreset}
-              onSubmitRecommendation={handleRunRecommendation}
-              isLoading={isLoadingRec}
-            />
+            {/* If recommendation is active and user is NOT editing, show RecommendationView prominently first */}
+            {recommendationResult && !isEditingSymptoms && (
+              <RecommendationView
+                result={recommendationResult}
+                isLoading={isLoadingRec}
+                onExploreComparison={handleExploreComparison}
+                yesCount={yesCount}
+                noCount={noCount}
+                unknownCount={unknownCount}
+                onEditSymptoms={() => setIsEditingSymptoms(true)}
+              />
+            )}
 
-            <RecommendationView
-              result={recommendationResult}
-              isLoading={isLoadingRec}
-              onExploreComparison={handleExploreComparison}
-            />
+            {/* When no recommendation exists OR user clicked 'Edit Symptoms', show SymptomInputConsole */}
+            {(!recommendationResult || isEditingSymptoms) && (
+              <div className="flex flex-col gap-3">
+                {isEditingSymptoms && (
+                  <div className="flex items-center justify-between px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-xs shadow-md">
+                    <span className="text-slate-300 font-medium">
+                      Editing Symptoms — adjust selections below and click "Analyze Symptoms" to recompute.
+                    </span>
+                    <button
+                      onClick={() => setIsEditingSymptoms(false)}
+                      className="text-xs text-brand-400 hover:text-brand-300 font-semibold cursor-pointer"
+                    >
+                      Return to Recommendation →
+                    </button>
+                  </div>
+                )}
+                <SymptomInputConsole
+                  symptoms={symptoms}
+                  queryValues={queryValues}
+                  setQueryValues={setQueryValues}
+                  presets={presets}
+                  onLoadPreset={handleLoadPreset}
+                  onSubmitRecommendation={handleRunRecommendation}
+                  isLoading={isLoadingRec}
+                  onResetAll={handleResetAll}
+                />
+              </div>
+            )}
           </div>
         )}
 
@@ -215,13 +251,13 @@ export const App: React.FC = () => {
         {activeTab === "benchmarks" && <BenchmarksDashboard />}
       </main>
 
-      <footer className="border-t border-slate-900 bg-slate-950 py-4 px-4 text-center text-xs text-slate-500">
+      <footer className="border-t border-slate-900 bg-slate-950 py-3.5 px-4 text-center text-xs text-slate-400">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
           <span>
-            Pawlak Rough Set Intelligent Recommender Prototype • Decision-Support Research System
+            Academic Decision-Support Research Prototype
           </span>
-          <span className="font-mono text-[11px] text-slate-600">
-            Training.csv (|U|=4920, |C|=132, |D|=41) • Testing.csv (N=42)
+          <span className="text-[11px] text-slate-400">
+            Rough Set Theory • Association Rules • Machine Learning Baselines
           </span>
         </div>
       </footer>

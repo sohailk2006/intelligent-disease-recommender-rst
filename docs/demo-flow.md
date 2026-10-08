@@ -24,7 +24,7 @@ This script provides a structured, reproducible walkthrough for demonstrating th
 - **Observations:**
   - **Primary Recommendation:** Dengue (100.0% Rough Membership Degree).
   - **Approximation Status:** `Lower Approximation under selected tolerance relation T_*(X) — Deterministic Certainty`.
-  - **Tolerance Class Size:** 102 training objects (all 102 compatible objects belong strictly to Dengue).
+  - **Tolerance Class Size:** 66 training objects (all 66 compatible objects belong strictly to Dengue).
   - **Boundary Region:** Empty ($BN_T(X) = \emptyset$).
 - **Talking Point:** *"When symptom knowledge is complete, the tolerance neighborhood coincides with the classical Pawlak equivalence class, yielding deterministic certainty without any heuristic guesswork."*
 

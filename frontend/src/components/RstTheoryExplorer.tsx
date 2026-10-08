@@ -46,16 +46,15 @@ export const RstTheoryExplorer: React.FC = () => {
         <h2 className="text-xl font-bold text-white mt-0.5">
           Pawlak Rough Set Theory (RST) Formalism
         </h2>
-        <p className="text-xs text-slate-400 mt-1 max-w-3xl">
-          Deterministic attribute reduction and discernibility analysis computed on the full 4,920 records of Training.csv without heuristic black boxes or LLMs.
+        <p className="text-xs text-slate-300 mt-1 max-w-3xl">
+          Computed directly from the full training decision table.
         </p>
       </div>
 
-      {/* Pawlak 10-Concepts Theory Cards Grid */}
+      {/* Pawlak Theory Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="glass-panel rounded-2xl p-4 border border-slate-800 flex flex-col justify-between">
           <div>
-            <span className="text-[10px] font-mono text-slate-500 uppercase">Concept 1 & 2</span>
             <h4 className="text-sm font-bold text-white mt-1">Decision Table DT</h4>
             <div className="text-xl font-extrabold text-brand-400 font-mono mt-2">|U| = 4,920</div>
             <p className="text-[11px] text-slate-400 mt-1">
@@ -66,7 +65,6 @@ export const RstTheoryExplorer: React.FC = () => {
 
         <div className="glass-panel rounded-2xl p-4 border border-slate-800 flex flex-col justify-between">
           <div>
-            <span className="text-[10px] font-mono text-slate-500 uppercase">Concept 4 & 5</span>
             <h4 className="text-sm font-bold text-white mt-1">Indiscernibility IND(C)</h4>
             <div className="text-xl font-extrabold text-emerald-400 font-mono mt-2">304 Patterns</div>
             <p className="text-[11px] text-slate-400 mt-1">
@@ -77,7 +75,6 @@ export const RstTheoryExplorer: React.FC = () => {
 
         <div className="glass-panel rounded-2xl p-4 border border-slate-800 flex flex-col justify-between">
           <div>
-            <span className="text-[10px] font-mono text-slate-500 uppercase">Concept 6 & 7</span>
             <h4 className="text-sm font-bold text-white mt-1">Degree of Dependency γ</h4>
             <div className="text-xl font-extrabold text-cyan-400 font-mono mt-2">γ_C(D) = 1.0</div>
             <p className="text-[11px] text-slate-400 mt-1">
@@ -88,7 +85,6 @@ export const RstTheoryExplorer: React.FC = () => {
 
         <div className="glass-panel rounded-2xl p-4 border border-slate-800 flex flex-col justify-between">
           <div>
-            <span className="text-[10px] font-mono text-slate-500 uppercase">Concept 8 & 10</span>
             <h4 className="text-sm font-bold text-white mt-1">Discernibility & Core</h4>
             <div className="text-xl font-extrabold text-amber-400 font-mono mt-2">|CORE(C)| = 0</div>
             <p className="text-[11px] text-slate-400 mt-1">
@@ -104,10 +100,10 @@ export const RstTheoryExplorer: React.FC = () => {
           <div>
             <h3 className="text-base font-bold text-white flex items-center gap-2">
               <Award className="w-5 h-5 text-brand-400" />
-              Minimal Reduct Candidates RED(C)
+              Inclusion-Minimal Reduct Candidates
             </h3>
             <p className="text-xs text-slate-400 mt-0.5">
-              Minimal attribute subsets preserving 100% classification dependency (γ = 1.0) with zero redundant symptoms.
+              Attribute subsets preserving 100% classification dependency (γ = 1.0). No redundant attributes within this candidate under the tested criterion.
             </p>
           </div>
 
@@ -128,12 +124,11 @@ export const RstTheoryExplorer: React.FC = () => {
           </div>
         </div>
 
-        {/* Active Reduct Details */}
         {activeReduct && (
           <div className="mt-5 flex flex-col gap-4">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800">
-                <span className="text-[10px] text-slate-500 uppercase tracking-wider block">Reduct Size</span>
+                <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Reduct Size</span>
                 <span className="text-2xl font-bold text-white font-mono">{activeReduct.size}</span>
                 <span className="text-[10px] text-emerald-400 block mt-0.5">
                   Reduced from 132 symptoms ({(100 - (activeReduct.size / 132) * 100).toFixed(0)}% reduction)
@@ -141,7 +136,7 @@ export const RstTheoryExplorer: React.FC = () => {
               </div>
 
               <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800">
-                <span className="text-[10px] text-slate-500 uppercase tracking-wider block">Dependency Preserved</span>
+                <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Dependency Preserved</span>
                 <span className="text-2xl font-bold text-brand-400 font-mono">
                   γ_R(D) = {activeReduct.dependency_degree.toFixed(2)}
                 </span>
@@ -151,23 +146,23 @@ export const RstTheoryExplorer: React.FC = () => {
               </div>
 
               <div className="bg-slate-900/80 p-3 rounded-xl border border-slate-800">
-                <span className="text-[10px] text-slate-500 uppercase tracking-wider block">Minimality Axiom</span>
+                <span className="text-[10px] text-slate-400 uppercase tracking-wider block">Minimality Axiom</span>
                 <span className="text-sm font-bold text-emerald-400 block mt-1 flex items-center gap-1.5">
                   <ShieldCheck className="w-4 h-4" />
-                  Pawlak Minimal Reduct
+                  Inclusion-Minimal Reduct
                 </span>
                 <span className="text-[10px] text-slate-400 block mt-0.5">
-                  ∀a ∈ R: γ_(R\a)(D) &lt; 1.0 (no redundant symptom)
+                  ∀a ∈ R: γ_(R\a)(D) &lt; 1.0 (No redundant attributes within this candidate under the tested criterion)
                 </span>
               </div>
             </div>
 
-            {/* Reduct Attributes Tag Cloud */}
+            {/* Reduct Attributes Tag Cloud - all 38 attributes visible */}
             <div>
               <span className="text-xs font-semibold text-slate-300 block mb-2">
-                Essential Condition Attributes in {activeReduct.name}:
+                {activeReduct.size} Selected Reduct Attributes
               </span>
-              <div className="flex flex-wrap gap-2 max-h-64 overflow-y-auto p-1">
+              <div className="flex flex-wrap gap-2 p-1">
                 {activeReduct.attributes.map((attr, index) => (
                   <span
                     key={attr}
