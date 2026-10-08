@@ -59,7 +59,7 @@ def compare_models(
     return {
         "status": "SUCCESS",
         "rst_prediction": {
-            "model_name": "Rough Set Theory (Pawlak Tolerance Recommender)",
+            "model_name": "Rough Set Theory (Selected Tolerance Relation)",
             "primary_disease": rst_res["primary_recommendation"]["disease"] if rst_res.get("primary_recommendation") else "Unknown",
             "confidence": rst_res["primary_recommendation"]["membership_degree"] if rst_res.get("primary_recommendation") else 0.0,
             "approximation_status": rst_res["primary_recommendation"]["approximation_status"] if rst_res.get("primary_recommendation") else "NONE",

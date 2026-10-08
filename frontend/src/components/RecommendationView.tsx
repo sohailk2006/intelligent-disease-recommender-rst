@@ -71,21 +71,21 @@ export const RecommendationView: React.FC<RecommendationViewProps> = ({
         return {
           bg: "bg-emerald-500/15 border-emerald-500/30 text-emerald-400",
           icon: ShieldCheck,
-          label: "Pawlak Lower Approximation B_*(X) — Deterministic Certainty",
+          label: "Lower Approximation under selected tolerance relation T_*(X) — Deterministic Certainty",
           desc: "The query's tolerance neighborhood [q]_T is a strict subset of this disease class. All matching reference objects belong exclusively to this condition.",
         };
       case "BOUNDARY":
         return {
           bg: "bg-amber-500/15 border-amber-500/30 text-amber-400",
           icon: Split,
-          label: "Pawlak Boundary Region BN_B(X) — Incomplete Information Ambiguity",
+          label: "Boundary Region under selected tolerance relation BN_T(X) — Incomplete Information Ambiguity",
           desc: "The query matches training objects across multiple disease classes due to unknown ('?') symptoms. Discernibility is incomplete.",
         };
       default:
         return {
           bg: "bg-indigo-500/15 border-indigo-500/30 text-indigo-400",
           icon: Info,
-          label: "Pawlak Upper Approximation B^*(X) — Plausible Candidate",
+          label: "Upper Approximation under selected tolerance relation T^*(X) — Plausible Candidate",
           desc: "Non-empty intersection between query tolerance neighborhood and this disease class.",
         };
     }
@@ -424,7 +424,7 @@ export const RecommendationView: React.FC<RecommendationViewProps> = ({
             </h4>
           </div>
           <p className="text-xs text-slate-400 mb-3">
-            Because some symptoms are unknown (?), multiple candidate diseases share the boundary region. Inquiring about the following symptoms will maximally discern between the top candidates:
+            Because some symptoms are unknown (?), multiple candidate diseases share the boundary region. The symptoms below are ranked by our project's <strong>Discriminative Power Heuristic</strong> (prevalence variance across top candidate diseases; higher variance indicates greater discernibility):
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5">
             {reasoning.suggested_disambiguation_symptoms.map((item) => (
@@ -436,8 +436,8 @@ export const RecommendationView: React.FC<RecommendationViewProps> = ({
                   <span className="text-xs font-bold text-white capitalize">
                     {item.symptom.replace(/_/g, " ")}
                   </span>
-                  <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800">
-                    Power: {item.discriminative_power}
+                  <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-amber-950 text-amber-400 border border-amber-800" title="Discriminative Power Heuristic (prevalence variance across top classes)">
+                    Heuristic Power: {item.discriminative_power}
                   </span>
                 </div>
                 <div className="text-[10px] text-slate-400 flex flex-col gap-0.5">
@@ -521,7 +521,7 @@ export const RecommendationView: React.FC<RecommendationViewProps> = ({
                 <th className="py-2.5 px-3">Rough Membership μ(q)</th>
                 <th className="py-2.5 px-3">Confidence</th>
                 <th className="py-2.5 px-3">Tolerance Support</th>
-                <th className="py-2.5 px-3">Pawlak Approximation Status</th>
+                <th className="py-2.5 px-3">Approximation Status (Tolerance Relation)</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-800/60">

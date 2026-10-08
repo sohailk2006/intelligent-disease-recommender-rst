@@ -311,3 +311,34 @@ To prevent any confusion between the evaluation counts reported:
   - **Benchmark Queries (1,050 benchmark queries):**  
     Used in `IncompleteBenchmarkRunner.run_benchmark()` for measuring runtime latency and timing stability.
     - Evaluated all five rates ($0\%$, $10\%$, $30\%$, $50\%$, $70\%$) with **5 repetitions each** ($5 \times 5 \times 42 = \mathbf{1,050 \text{ benchmark queries}}$) across Rough Set Theory and all 4 ML baselines (totaling $5,250$ individual model predictions).
+
+### 10.6 Disambiguation Score Audit: Discriminative Power Heuristic
+The active recommendation engine guides clinical disambiguation when a query falls in the boundary region ($BN_T(X)$) by recommending unobserved symptoms.
+- **Exact Formula:**
+  $$\text{Var}(p(a)) = \frac{1}{K} \sum_{k=1}^K (p_k(a) - \bar{p}(a))^2$$
+  where:
+  - $K = \min(3, |\text{Candidate Diseases}|)$ is the number of top competing candidate diseases in $[q]_T$.
+  - $p_k(a) = \frac{1}{|U_{d_k}|} \sum_{x \in U_{d_k}} x(a)$ is the empirical prevalence of symptom $a$ among training instances of disease class $d_k \in D$.
+  - $\bar{p}(a) = \frac{1}{K} \sum_{k=1}^K p_k(a)$ is the average prevalence across the top candidate diseases.
+- **Inputs:**
+  - Query $q$ and its unknown condition attributes: $Unknown(q) = \{ a \in C \mid q(a) = {?} \}$.
+  - Top candidate diseases ranked by rough membership degree $\mu_{X_d}(q)$.
+  - Complete training profiles in $U$ for the candidate disease classes.
+- **Normalization and Bounding:**
+  - Since $p_k(a) \in [0, 1]$ (Bernoulli proportions), the mathematical variance is bounded: $\text{Var}(p(a)) \in [0, 0.25]$.
+  - Recommender filters out uninformative questions with $\text{Var}(p(a)) \le 0.05$.
+- **Metric Classification:**
+  - **Project-Specific Heuristic:** This score is an empirical variance heuristic; it is **NOT** a standard classical Pawlak Rough Set metric. It is explicitly labeled in UI and schemas as the **"Discriminative Power Heuristic"**.
+- **Interpretation:**
+  - **Higher score means more useful:** A higher variance indicates that the symptom exhibits sharp differences in prevalence across competing diseases (e.g., present in 100% of Disease A but 0% of Disease B), maximizing the disambiguation potential when answered.
+
+---
+
+## 11. Known Limitations
+
+1. **Only 42 Held-Out Test Records:** The official test dataset contains exactly 42 records across 41 disease classes (approximately 1 record per class).
+2. **Dataset-Specific Empirical Results:** All reported accuracies, coverages, and degradations are empirical findings on this benchmark dataset. They should not be interpreted as generalizable clinical evidence.
+3. **Selected Baseline Incomplete-Information Relation:** The compatibility/tolerance relation $T(q, x)$ comparing objects solely on known query attributes is the selected baseline; faculty may specify alternative generalized incomplete rough set formulations in future work.
+4. **Inclusion-Minimal Reducts, Not Globally Minimum:** Reduct candidates (e.g., 38 attributes) are inclusion-minimal under Pawlak's dependency criterion, not proven to be the global minimum-cardinality reduct (which is NP-hard).
+5. **Academic Decision-Support Prototype:** This system is an academic research demonstration of Rough Set Theory and Machine Learning, strictly NOT a medical diagnostic tool or clinical software.
+

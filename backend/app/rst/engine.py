@@ -141,7 +141,9 @@ class RoughSetRecommender:
             }
 
         # Step 5: Suggested disambiguating symptoms (if boundary region is non-empty)
-        # Find which unknown symptoms vary the most among the top candidate diseases
+        # Note: 'discriminative_power' is our project's custom variance-based heuristic (NOT a standard RST metric).
+        # Formula: Var(p(a)) = (1/K) * sum((p_k(a) - mean(p(a)))^2) across top K candidate diseases (K <= 3).
+        # Higher variance indicates greater distinguishing utility between the candidate disease profiles.
         disambiguation_suggestions: List[Dict[str, Any]] = []
         if len(candidates) > 1 and len(unknown_attrs) > 0:
             top_candidate_indices = [

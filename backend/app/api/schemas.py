@@ -26,7 +26,10 @@ class CompareRequest(BaseModel):
 
 class DisambiguationSuggestion(BaseModel):
     symptom: str
-    discriminative_power: float
+    discriminative_power: float = Field(
+        ...,
+        description="Project-specific discriminative power heuristic: prevalence variance across top candidate diseases (higher = more distinguishing).",
+    )
     rates_per_disease: Dict[str, float]
 
 
