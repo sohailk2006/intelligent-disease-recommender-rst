@@ -1,6 +1,7 @@
 """Preset clinical test scenarios loaded from Testing.csv for interactive experimentation."""
 
 from typing import List, Dict, Any
+import json
 from fastapi import APIRouter
 import pandas as pd
 import numpy as np
@@ -12,7 +13,15 @@ router = APIRouter(prefix="/presets", tags=["Test Scenarios"])
 
 @router.get("")
 def get_presets():
-    """Retrieve pre-built interactive test cases from Testing.csv with varying missing rates."""
+    """Retrieve pre-built interactive test cases from cached artifact or Testing.csv."""
+    presets_artifact = settings.ARTIFACTS_DIR / "presets.json"
+    if presets_artifact.exists():
+        with open(presets_artifact, "r", encoding="utf-8") as f:
+            return json.load(f)
+
+    if not settings.TEST_DATA_PATH.exists():
+        return {"total_presets": 0, "presets": []}
+
     test_df = pd.read_csv(settings.TEST_DATA_PATH)
     test_df = test_df.loc[:, ~test_df.columns.str.contains("^Unnamed")]
     cond_cols = [c for c in test_df.columns if c != "prognosis"]

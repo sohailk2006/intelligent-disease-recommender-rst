@@ -1,10 +1,9 @@
 # Dataset Specifications & Acquisition Guide
 
 ## 1. Governance & Version Control Policy
-In compliance with project data governance and privacy policies:
-- Raw medical training datasets (`Training.csv`) and held-out evaluation datasets (`Testing.csv`) are **intentionally excluded from Git version control** via `.gitignore`.
+- **Private Repository Inclusion Reason:** To support real-time interactive Rough Set lower and boundary approximation computations in cloud deployment (such as Render) where disk storage is ephemeral and stateless, `Training.csv` and `Testing.csv` are tracked within this private repository so the FastAPI application can initialize the `DecisionTable` upon startup.
 - All deterministically computed mathematical and diagnostic artifacts (including Johnson discernibility reducts, association rules, disease catalog, confusion matrices, and pre-trained baseline weights) are pre-packaged and verified under [`backend/artifacts/`](../backend/artifacts/).
-- **The application runs fully out-of-the-box without requiring raw CSV files** for inference, evaluation display, and interactive reasoning.
+- In addition, precomputed preset clinical scenarios are cached in `backend/artifacts/presets.json` to guarantee instant load times.
 
 ---
 

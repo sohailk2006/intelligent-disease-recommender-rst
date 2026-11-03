@@ -71,10 +71,9 @@ temp/
 tmp/
 backend/artifacts/*.tmp
 
-# 7. Raw Clinical Datasets (Protected Dataset Governance Policy)
-data/*.csv
-data/Training.csv
-data/Testing.csv
+# 7. Clinical Datasets (Documented inclusion for cloud deployment DecisionTable runtime)
+!data/Training.csv
+!data/Testing.csv
 !data/.gitkeep
 !data/README.md
 
