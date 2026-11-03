@@ -10,9 +10,12 @@ import type {
 } from "../types";
 
 // Configurable API base for production deployment.
-// If VITE_API_BASE_URL is defined (e.g. "https://api.yourdomain.com"), it uses it.
+// If VITE_API_BASE_URL is defined (e.g. "https://api.yourdomain.com" or Render host "api.onrender.com"), it uses it.
 // If empty or omitted, defaults to "/api" (which works seamlessly with Vite dev proxy and reverse proxy).
-const rawEnvUrl = (import.meta.env.VITE_API_BASE_URL as string | undefined)?.trim();
+let rawEnvUrl = (import.meta.env.VITE_API_BASE_URL as string | undefined)?.trim();
+if (rawEnvUrl && !rawEnvUrl.startsWith("http://") && !rawEnvUrl.startsWith("https://") && !rawEnvUrl.startsWith("/")) {
+  rawEnvUrl = `https://${rawEnvUrl}`;
+}
 const normalizedBase = rawEnvUrl ? rawEnvUrl.replace(/\/+$/, "") : "";
 const API_BASE = normalizedBase
   ? (normalizedBase.endsWith("/api") ? normalizedBase : `${normalizedBase}/api`)
