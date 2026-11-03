@@ -10,11 +10,17 @@ import type {
 } from "../types";
 
 // Configurable API base for production deployment.
-// If VITE_API_BASE_URL is defined (e.g. "https://api.yourdomain.com" or Render host "api.onrender.com"), it uses it.
+// If VITE_API_BASE_URL is defined (e.g. "https://api.yourdomain.com", "diagnostic-recommender-api.onrender.com", or Render internal service name "diagnostic-recommender-api"), it resolves it.
 // If empty or omitted, defaults to "/api" (which works seamlessly with Vite dev proxy and reverse proxy).
 let rawEnvUrl = (import.meta.env.VITE_API_BASE_URL as string | undefined)?.trim();
-if (rawEnvUrl && !rawEnvUrl.startsWith("http://") && !rawEnvUrl.startsWith("https://") && !rawEnvUrl.startsWith("/")) {
-  rawEnvUrl = `https://${rawEnvUrl}`;
+if (rawEnvUrl) {
+  // If Render passes an internal service name without domain (e.g. "diagnostic-recommender-api")
+  if (!rawEnvUrl.includes(".") && !rawEnvUrl.startsWith("http://") && !rawEnvUrl.startsWith("https://") && !rawEnvUrl.startsWith("/")) {
+    rawEnvUrl = `${rawEnvUrl}.onrender.com`;
+  }
+  if (!rawEnvUrl.startsWith("http://") && !rawEnvUrl.startsWith("https://") && !rawEnvUrl.startsWith("/")) {
+    rawEnvUrl = `https://${rawEnvUrl}`;
+  }
 }
 const normalizedBase = rawEnvUrl ? rawEnvUrl.replace(/\/+$/, "") : "";
 const API_BASE = normalizedBase
